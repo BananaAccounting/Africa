@@ -1,11 +1,11 @@
 #OHADA
 Organisation pour l'Harmonisation en Afrique du Droit des Affaires
 
-Modéles Banana Comptabilité
+###Modéles Banana Comptabilité
 * syschohada_base.ac2 Comptabilité en partie double, plan 
 
 
-Information and documentation:
+###Information et documentation
 
 * [www.ohada.org](http://www.ohada.org) 
 * [OHADA Plan comptable](http://www.droit-afrique.com/upload/doc/ohada/Ohada-Acte-Uniforme-2000-plan-des-comptes.pdf) (380 kBytes)
