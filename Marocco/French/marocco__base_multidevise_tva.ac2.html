@@ -1,14 +1,16 @@
 <div class='ac2preview accountingproperties'><p>Société XXX</p>
 <p>Comptabilité 2017</p>
 <p>DeviseBase: MAD</p>
-<p>Comptabilité en partie double</p>
+<p>Comptabilité en partie double avec multidevise et TVA</p>
 </div><table class='ac2preview'><caption>Comptes</caption><tr>
 <th>Groupe</th>
 <th>Compte</th>
 <th>Libellé</th>
+<th>Devise</th>
 <th>Gr</th>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -17,8 +19,10 @@
 <td>&nbsp;</td>
 <td>BILAN</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -27,68 +31,190 @@
 <td>&nbsp;</td>
 <td>ACTIFS</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
-<td>2321</td>
-<td>Bâtiments</td>
-<td>A</td>
-</tr>
-<tr><td>&nbsp;</td>
-<td>2111</td>
-<td>Installations générales </td>
-<td>A</td>
+<td>&nbsp;</td>
+<td>Actifs immobilisés</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>2331</td>
 <td>Installations techniques, matériels et outillage industriels</td>
-<td>A</td>
+<td>MAD</td>
+<td>A1</td>
 </tr>
 <tr><td>&nbsp;</td>
-<td>2352</td>
-<td>Matériel de bureau</td>
-<td>A</td>
+<td>2340</td>
+<td>Matériel de transport</td>
+<td>MAD</td>
+<td>A1</td>
 </tr>
 <tr><td>&nbsp;</td>
-<td>2351</td>
-<td>Mobilier</td>
-<td>A</td>
+<td>2111</td>
+<td>Installations générales </td>
+<td>MAD</td>
+<td>A1</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>2210</td>
 <td>Logiciels</td>
+<td>MAD</td>
+<td>A1</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>2321</td>
+<td>Bâtiments</td>
+<td>MAD</td>
+<td>A1</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>2351</td>
+<td>Mobilier</td>
+<td>MAD</td>
+<td>A1</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>2352</td>
+<td>Matériel de bureau</td>
+<td>MAD</td>
+<td>A1</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>2355</td>
+<td>Matériel informatique</td>
+<td>MAD</td>
+<td>A1</td>
+</tr>
+<tr><td>A1</td>
+<td>&nbsp;</td>
+<td>Total Actifs immobilisés</td>
+<td>&nbsp;</td>
 <td>A</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Actifs circulants</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>3121</td>
 <td>Stocks de matières premières</td>
-<td>A</td>
+<td>MAD</td>
+<td>A21</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>3111</td>
 <td>Stocks de marchandises</td>
-<td>A</td>
+<td>MAD</td>
+<td>A21</td>
+</tr>
+<tr><td>A21</td>
+<td>&nbsp;</td>
+<td>Stocks et travaux en cours</td>
+<td>&nbsp;</td>
+<td>A2</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>3421</td>
+<td>Clients</td>
+<td>MAD</td>
+<td>A22</td>
 </tr>
 <tr><td>341</td>
 <td>&nbsp;</td>
 <td>Total Clients</td>
-<td>A</td>
+<td>&nbsp;</td>
+<td>A22</td>
+</tr>
+<tr><td>A22</td>
+<td>&nbsp;</td>
+<td>Créances</td>
+<td>&nbsp;</td>
+<td>A2</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>5141</td>
 <td>Banque X</td>
-<td>A</td>
+<td>MAD</td>
+<td>A23</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>51411</td>
 <td>Banque Y</td>
-<td>A</td>
+<td>MAD</td>
+<td>A23</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>51412</td>
+<td>Banque USD </td>
+<td>USD</td>
+<td>A23</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>5161</td>
+<td>Caisse</td>
+<td>MAD</td>
+<td>A23</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>5162</td>
+<td>Caisse USD</td>
+<td>USD</td>
+<td>A23</td>
+</tr>
+<tr><td>A23</td>
+<td>&nbsp;</td>
+<td>Disponibilités</td>
+<td>&nbsp;</td>
+<td>A2</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>3491</td>
 <td>Charges constatées d'avance</td>
+<td>MAD</td>
+<td>A24</td>
+</tr>
+<tr><td>A24</td>
+<td>&nbsp;</td>
+<td>Actifs de régularisation</td>
+<td>&nbsp;</td>
+<td>A2</td>
+</tr>
+<tr><td>A2</td>
+<td>&nbsp;</td>
+<td>Total Actifs circulants</td>
+<td>&nbsp;</td>
 <td>A</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -96,14 +222,17 @@
 <tr><td>A</td>
 <td>&nbsp;</td>
 <td>TOTAL ACTIFS</td>
+<td>&nbsp;</td>
 <td>00</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -112,83 +241,142 @@
 <td>&nbsp;</td>
 <td>PASSIFS</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>1111</td>
 <td>Capital souscrit </td>
-<td>P</td>
+<td>MAD</td>
+<td>P1</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>4463</td>
 <td>Associés - Comptes courants</td>
-<td>P</td>
+<td>MAD</td>
+<td>P1</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>1140</td>
 <td>Réserves</td>
-<td>P</td>
+<td>MAD</td>
+<td>P1</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>1161</td>
 <td>Report à nouveau créditeur</td>
-<td>P</td>
+<td>MAD</td>
+<td>P1</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>1169</td>
+<td>Report à nouveau débiteur</td>
+<td>MAD</td>
+<td>P1</td>
 </tr>
 <tr><td>119</td>
 <td>&nbsp;</td>
 <td>Résultat net d'exércice (Bénéfice ou perte)</td>
+<td>&nbsp;</td>
+<td>P1</td>
+</tr>
+<tr><td>P1</td>
+<td>&nbsp;</td>
+<td>Capitaux propres</td>
+<td>&nbsp;</td>
 <td>P</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>151</td>
 <td>Provisions pour risques</td>
+<td>MAD</td>
+<td>P2</td>
+</tr>
+<tr><td>P2</td>
+<td>&nbsp;</td>
+<td>Provision pour risque et charges</td>
+<td>&nbsp;</td>
 <td>P</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>4411</td>
 <td>Fournisseurs</td>
-<td>P</td>
+<td>MAD</td>
+<td>P3</td>
 </tr>
 <tr><td>441</td>
 <td>&nbsp;</td>
 <td>Total Créanciers</td>
-<td>P</td>
+<td>&nbsp;</td>
+<td>P3</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>4455</td>
 <td>Décompte TVA</td>
-<td>P</td>
+<td>MAD</td>
+<td>P3</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>4456</td>
 <td>État, TVA due </td>
-<td>P</td>
+<td>MAD</td>
+<td>P3</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>1481</td>
 <td>Emprunts auprès des établissements de crédit</td>
-<td>P</td>
+<td>MAD</td>
+<td>P3</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>4491</td>
 <td>Produits constatés d'avance</td>
+<td>MAD</td>
+<td>P3</td>
+</tr>
+<tr><td>P3</td>
+<td>&nbsp;</td>
+<td>Dettes</td>
+<td>&nbsp;</td>
 <td>P</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>P</td>
 <td>&nbsp;</td>
 <td>TOTAL  PASSIFS</td>
+<td>&nbsp;</td>
 <td>00</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-</tr>
-<tr><td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -197,8 +385,10 @@
 <td>&nbsp;</td>
 <td>COMPTE DE RESULTAT</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -207,58 +397,70 @@
 <td>&nbsp;</td>
 <td>PRODUITS</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>71211</td>
 <td>Ventes de produits finis</td>
+<td>MAD</td>
 <td>R</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>71243</td>
 <td>Prestations de services</td>
+<td>MAD</td>
 <td>R</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>7111</td>
 <td>Ventes de marchandises</td>
+<td>MAD</td>
 <td>R</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>7119</td>
 <td>Rabais, remises et ristournes accordés par l'entreprise</td>
+<td>MAD</td>
 <td>R</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>7131</td>
 <td>Variation des stocks </td>
+<td>MAD</td>
 <td>R</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>7331</td>
 <td>Gains de change </td>
+<td>MAD</td>
 <td>R</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>7512</td>
 <td>Produits des autres immobilisations financières</td>
+<td>MAD</td>
 <td>R</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 <tr><td>R</td>
 <td>&nbsp;</td>
-<td>TOTAL PRODUITS</td>
+<td>6121</td>
+<td>&nbsp;</td>
 <td>02</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -267,128 +469,244 @@
 <td>&nbsp;</td>
 <td>CHARGES</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6121</td>
 <td>Achats stockés - Matières premières (et fournitures)</td>
-<td>C</td>
+<td>MAD</td>
+<td>C11</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6122</td>
 <td>Achats de matières et forunitures consommables</td>
-<td>C</td>
+<td>MAD</td>
+<td>C11</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6111</td>
 <td>Achats de marchandises</td>
-<td>C</td>
+<td>MAD</td>
+<td>C11</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6119</td>
 <td>Rabais, remises et ristournes obtenus sur achats</td>
-<td>C</td>
+<td>MAD</td>
+<td>C11</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6124</td>
 <td>Variation des stocks</td>
-<td>C</td>
+<td>MAD</td>
+<td>C11</td>
+</tr>
+<tr><td>C11</td>
+<td>&nbsp;</td>
+<td>Charges de matières, marchandises et services</td>
+<td>&nbsp;</td>
+<td>C1</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6167</td>
 <td>Impôts, taxes et versements assimilés sur rémunérations</td>
-<td>C</td>
+<td>MAD</td>
+<td>C12</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>61678</td>
 <td>Autres impôts, taxes et versements assimilés </td>
-<td>C</td>
+<td>MAD</td>
+<td>C12</td>
+</tr>
+<tr><td>C12</td>
+<td>&nbsp;</td>
+<td>Impôts, taxes et versements assimilés </td>
+<td>&nbsp;</td>
+<td>C1</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6171</td>
 <td>Rémunérations du personnel</td>
-<td>C</td>
+<td>MAD</td>
+<td>C13</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6177</td>
 <td>Rémunération du travail de l'exploitant</td>
-<td>C</td>
+<td>MAD</td>
+<td>C13</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>61741</td>
 <td>Charges de sécurité sociale et de prévoyance</td>
-<td>C</td>
+<td>MAD</td>
+<td>C13</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>61774</td>
 <td>Cotisations sociales personnelles de l'exploitant</td>
-<td>C</td>
+<td>MAD</td>
+<td>C13</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>61768</td>
 <td>Autres charges sociales</td>
-<td>C</td>
+<td>MAD</td>
+<td>C13</td>
+</tr>
+<tr><td>C13</td>
+<td>&nbsp;</td>
+<td>Charges de personnel</td>
+<td>&nbsp;</td>
+<td>C1</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6591</td>
 <td>Dotations aux amortissements et aux provisions </td>
-<td>C</td>
+<td>MAD</td>
+<td>C14</td>
+</tr>
+<tr><td>C14</td>
+<td>&nbsp;</td>
+<td>Dotations aux amortissements</td>
+<td>&nbsp;</td>
+<td>C1</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6131</td>
 <td>Locations et charges locatives</td>
-<td>C</td>
+<td>MAD</td>
+<td>C15</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>6132</td>
+<td>Redevances de crédit bail</td>
+<td>MAD</td>
+<td>C15</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>61314</td>
 <td>Matériel de bureau</td>
-<td>C</td>
+<td>MAD</td>
+<td>C15</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>61341</td>
 <td>Assurance</td>
-<td>C</td>
+<td>MAD</td>
+<td>C15</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>61348</td>
 <td>Divers</td>
-<td>C</td>
+<td>MAD</td>
+<td>C15</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6144</td>
 <td>Publicité, publications, relations publiques</td>
-<td>C</td>
+<td>MAD</td>
+<td>C15</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6142</td>
 <td>Transports de biens et transports collectifs du personnel</td>
-<td>C</td>
+<td>MAD</td>
+<td>C15</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6145</td>
 <td>Frais postaux et frais de télécommunications</td>
-<td>C</td>
+<td>MAD</td>
+<td>C15</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6147</td>
 <td>Services bancaires et assimilés</td>
+<td>MAD</td>
+<td>C15</td>
+</tr>
+<tr><td>C15</td>
+<td>&nbsp;</td>
+<td>Autres charges d'exploitation</td>
+<td>&nbsp;</td>
+<td>C1</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>C1</td>
+<td>&nbsp;</td>
+<td>63</td>
+<td>&nbsp;</td>
 <td>C</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6311</td>
 <td>Intérêts des emprunts et dettes</td>
-<td>C</td>
+<td>MAD</td>
+<td>C2</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>6331</td>
 <td>Pertes de change </td>
+<td>MAD</td>
+<td>C2</td>
+</tr>
+<tr><td>C2</td>
+<td>&nbsp;</td>
+<td>Résultat financier</td>
+<td>&nbsp;</td>
 <td>C</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>C</td>
 <td>&nbsp;</td>
 <td>TOTAL CHARGES</td>
+<td>&nbsp;</td>
 <td>02</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -396,9 +714,11 @@
 <tr><td>02</td>
 <td>&nbsp;</td>
 <td>Perte (+) Bénéfice (-) du Compte de Résultat</td>
+<td>&nbsp;</td>
 <td>119</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -407,13 +727,16 @@
 <td>&nbsp;</td>
 <td>Différence doit être = 0 (cellule vide)</td>
 <td>&nbsp;</td>
-</tr>
-<tr><td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -422,33 +745,40 @@
 <td>&nbsp;</td>
 <td>Clients</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>CL001</td>
 <td>Société X</td>
+<td>MAD</td>
 <td>341A</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>CL002</td>
 <td>Société Y</td>
+<td>MAD</td>
 <td>341A</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>CL003</td>
 <td>Société Z</td>
+<td>MAD</td>
 <td>341A</td>
 </tr>
 <tr><td>341A</td>
 <td>&nbsp;</td>
 <td>Total Clients</td>
+<td>&nbsp;</td>
 <td>341</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -457,33 +787,40 @@
 <td>&nbsp;</td>
 <td>Créanciers</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>CR001</td>
 <td>Société X</td>
+<td>MAD</td>
 <td>441A</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>CR002</td>
 <td>Société Y</td>
+<td>MAD</td>
 <td>441A</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>CR003</td>
 <td>Société Z</td>
+<td>MAD</td>
 <td>441A</td>
 </tr>
 <tr><td>441A</td>
 <td>&nbsp;</td>
 <td>Total Créanciers</td>
+<td>&nbsp;</td>
 <td>441</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -492,8 +829,10 @@
 <td>&nbsp;</td>
 <td>Segments</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -501,19 +840,23 @@
 <tr><td>&nbsp;</td>
 <td>:01</td>
 <td>Segment X</td>
+<td>MAD</td>
 <td>S1</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>:02</td>
 <td>Segment Y</td>
+<td>MAD</td>
 <td>S1</td>
 </tr>
 <tr><td>S1</td>
 <td>&nbsp;</td>
 <td>Total Segments</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -522,8 +865,10 @@
 <td>&nbsp;</td>
 <td>Centres de coût et de profit</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 <tr><td>&nbsp;</td>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -531,16 +876,143 @@
 <tr><td>&nbsp;</td>
 <td>.C1</td>
 <td>Centres de coût et de profit X</td>
+<td>MAD</td>
 <td>CC1</td>
 </tr>
 <tr><td>&nbsp;</td>
 <td>.C2</td>
 <td>Centres de coût et de profit Y</td>
+<td>MAD</td>
 <td>CC1</td>
 </tr>
 <tr><td>CC1</td>
 <td>&nbsp;</td>
 <td>Total Centres de coût et de profit</td>
 <td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<table class='ac2preview'><caption>Codes TVA</caption><tr>
+<th>Cod. TVA</th>
+<th>Libellé</th>
+<th>%TVA</th>
+</tr>
+<tr><td>&nbsp;</td>
+<td>Ventes</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>V0</td>
+<td>Ventes sans TVA</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>VE</td>
+<td>Ventes à l'étranger</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>V20</td>
+<td>Ventes au 20.00% </td>
+<td>20.00</td>
+</tr>
+<tr><td>V14</td>
+<td>Ventes au 14.00% </td>
+<td>14.00</td>
+</tr>
+<tr><td>V10</td>
+<td>Ventes au 10.00% </td>
+<td>10.00</td>
+</tr>
+<tr><td>V7</td>
+<td>Ventes au 7.00% </td>
+<td>7.00</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>TOTAL TVA DUE </td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>Achats</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>A20</td>
+<td>Achats au 20.00% </td>
+<td>20.00</td>
+</tr>
+<tr><td>A14</td>
+<td>Achats au 14.00% </td>
+<td>14.00</td>
+</tr>
+<tr><td>A10</td>
+<td>Achats au 10.00% </td>
+<td>10.00</td>
+</tr>
+<tr><td>A7</td>
+<td>Achats au 7.00% </td>
+<td>7.00</td>
+</tr>
+<tr><td>A20-2</td>
+<td>Montant TVA au 100% (TVA payée à l'importation)</td>
+<td>20.00</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>TOTAL TVA DEDUCTIBLE</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>TOTAL</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<table class='ac2preview'><caption>Changes</caption><tr>
+<th>Dev.Référence</th>
+<th>Devise</th>
+<th>Libellé</th>
+</tr>
+<tr><td>&nbsp;</td>
+<td>USD</td>
+<td>USA Dollar</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>EUR</td>
+<td>Euro</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>GBP</td>
+<td>Livre sterling</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>CHF</td>
+<td>Franc suiesse</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>CNY</td>
+<td>Yuan chinois</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>CAD</td>
+<td>Dollar canadien</td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>AED</td>
+<td>Dirham Emirats Arabes Unis</td>
 </tr>
 </table>
