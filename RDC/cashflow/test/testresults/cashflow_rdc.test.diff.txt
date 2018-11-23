@@ -1,0 +1,22 @@
+Test Banana Apps
+----------------
+
+Date:        2018-11-23 13:33:23.307
+Duration:    00:00:00.725
+Application: BananaExpm90 9.0.3.181120
+OS:          macOS Sierra (10.12)
+Qt:          5.12.0
+
+Test summary
+------------
+
+Test succesfully completed
+
+> Fatal errors:  0
+> Differences:   0
+> Added:         0
+> Deleted:       0
+> Identical:     49
+> Total results: 49
+> Total files:   1
+

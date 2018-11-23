@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.app.cashflowrdc
 // @api = 1.0
-// @pubdate = 2018-11-21
+// @pubdate = 2018-11-23
 // @publisher = Banana.ch SA
 // @description = Cash Flow RDC
 // @task = app.command
@@ -73,8 +73,6 @@ function exec() {
 *
 **************************************************************************************/
 function createReport(current, previous) {
-
-   Banana.document.clearMessages();
 
    // Accounting period for the current year file
    var currentStartDate = current.info("AccountingDataBase","OpeningDate");
