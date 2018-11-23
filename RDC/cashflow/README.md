@@ -4,7 +4,7 @@ The BananaApp has been developed following the specific RDC pdf documentations b
 
 Content:
 
-* **cashflow_rdc.js**: the BananaApp;
+* **ch.banana.africa.cashflowrdc.js**: the BananaApp;
 * **accounting_2018.ac2**: example Banana file for the current year;
 * **accounting_2017.ac2**: example Banana file for the previous year;
 * **Tableau des flux de tresorerie.pdf**: an example of how the report should looks like;
