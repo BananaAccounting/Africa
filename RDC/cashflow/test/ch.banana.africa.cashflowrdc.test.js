@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-// @id = ch.banana.app.cashflowrdc.test
+// @id = ch.banana.africa.cashflowrdc.test
 // @api = 1.0
 // @pubdate = 2018-11-23
 // @publisher = Banana.ch SA
@@ -23,7 +23,7 @@
 // @outputformat = none
 // @inputdataform = none
 // @timeout = -1
-// @includejs = ../cashflow_rdc.js
+// @includejs = ../ch.banana.africa.cashflowrdc.js
 
 // Register this test case to be executed
 Test.registerTestCase(new TestCashflowRDC());

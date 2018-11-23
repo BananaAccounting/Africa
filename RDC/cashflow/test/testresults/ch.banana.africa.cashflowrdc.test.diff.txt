@@ -1,8 +1,8 @@
 Test Banana Apps
 ----------------
 
-Date:        2018-11-23 13:33:23.307
-Duration:    00:00:00.725
+Date:        2018-11-23 14:02:09.473
+Duration:    00:00:00.709
 Application: BananaExpm90 9.0.3.181120
 OS:          macOS Sierra (10.12)
 Qt:          5.12.0

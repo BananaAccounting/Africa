@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-// @id = ch.banana.app.cashflowrdc
+// @id = ch.banana.africa.cashflowrdc
 // @api = 1.0
 // @pubdate = 2018-11-23
 // @publisher = Banana.ch SA
