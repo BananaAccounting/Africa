@@ -16,7 +16,8 @@
 // @api = 1.0
 // @pubdate = 2018-11-23
 // @publisher = Banana.ch SA
-// @description = Cash Flow RDC
+// @description = Cash Flow Report (OHADA - RDC) [BETA]
+// @description.fr = Tableau des flux de tresorerie (OHADA - RDC) [BETA]
 // @task = app.command
 // @doctype = *.*
 // @docproperties =
