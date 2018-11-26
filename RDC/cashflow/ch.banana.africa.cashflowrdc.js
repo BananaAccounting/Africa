@@ -1066,8 +1066,8 @@ function calculate_tot_ZH(ZG,ZA) {
 *
 **************************************************************************************/
 
-function getAmount(current,group,propriety,startDate,endDate) {
-   var currentBal = current.currentBalance(group,startDate,endDate)
+function getAmount(banDoc,account,propriety,startDate,endDate) {
+   var currentBal = banDoc.currentBalance(account,startDate,endDate)
    var value = currentBal[propriety];
    return value;
 }
