@@ -15,8 +15,9 @@ Content:
 
 ## How it works
 * Start Banana Accounting
+* Download the **accounting_2018.ac2** and **accounting_2017.ac2** files
 * Open the current year accounting file (i.e. accounting_2018.ac2)
 * Install the BananaApp **Cash Flow Report (OHADA - RDC)** (visit the [Menu Apps](https://www.banana.ch/doc9/en/node/7709) documentation)
-* Run the "Cash Flow Report (OHADA - RDC) [BETA]" BananaApp from the menu Apps
+* Run the BananaApp from the menu Apps
 * Select the previous year accounting file (i.e. accounting_2017.ac2) in the dialog window
 * Check the results
