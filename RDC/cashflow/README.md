@@ -13,12 +13,22 @@ Content:
 	* The syntax is **{account/group, column}**, where **account/group** indicates the account or the group of the Accounts table in Banana (groups begins with **Gr=**); the **column** indicates the type of data (Opening, Debit, Credit, Total(debit-credit)) of the Accounts table in Banana.
 	* The **(-1)** indicates that the value must be inverted. If positive inverts to a negative value, if negative inverts to a positive value.
 
+## Banana Accounting file settings
+* In Banana select from the **menu File** the command **File and accounting propeties...**
+* Insert the **company name** in the Company field
+* Insert the **Designation of the entity** in the Fiscal number field
+* Insert the **Identification number** in the Vat/Sales tex number
+
+The data inserted will be used to fill the header information of the report.
 
 ## How it works
+Install the BananaApp:
 * Start Banana Accounting
-* Download the **accounting_2018.ac2** and **accounting_2017.ac2** files
-* Open the current year accounting file (i.e. accounting_2018.ac2)
 * Install the BananaApp **Cash Flow Report (OHADA - RDC)** (visit the [Menu Apps](https://www.banana.ch/doc9/en/node/7709) documentation)
-* Run the BananaApp from the menu Apps
-* If the option to use the previous year accounting file is accepted, select the accounting file (i.e. accounting_2017.ac2)
+
+Run the BananaApp
+* Open the accounting file with Banana (Download the **accounting_2018.ac2** and **accounting_2017.ac2** files examples)
+* In Banana select from the **menu Apps** the BananaApp **Cash Flow Report (OHADA - RDC)** 
+* Choose if include or not the previous year accounting file to the report. In case you want to include it, select the accounting file and click on Ok.
+* The report is generated
 * Check the results
