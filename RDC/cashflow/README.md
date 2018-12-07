@@ -16,7 +16,7 @@ Content:
 ## Banana Accounting file settings
 * In Banana select from the **menu File** the command **File and accounting propeties...**
 * Insert the **company name** in the Company field
-* Insert the **Designation of the entity** in the Fiscal number field
+* Insert the **Designation of the entity number** in the Fiscal number field
 * Insert the **Identification number** in the Vat/Sales tex number
 
 The data inserted will be used to fill the header information of the report.
