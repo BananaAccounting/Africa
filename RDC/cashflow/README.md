@@ -22,11 +22,12 @@ Content:
 The data inserted will be used to fill the header information of the report.
 
 ## How it works
-Install the BananaApp:
+
+### Install the BananaApp:
 * Start Banana Accounting
 * Install the BananaApp **Cash Flow Report (OHADA - RDC)** (visit the [Menu Apps](https://www.banana.ch/doc9/en/node/7709) documentation)
 
-Run the BananaApp
+### Run the BananaApp:
 * Open the accounting file with Banana (Download the **accounting_2018.ac2** and **accounting_2017.ac2** files examples)
 * In Banana select from the **menu Apps** the BananaApp **Cash Flow Report (OHADA - RDC)** 
 * Choose if include or not the previous year accounting file to the report. In case you want to include it, select the accounting file and click on Ok.
