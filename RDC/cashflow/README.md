@@ -32,3 +32,6 @@ The data inserted will be used to fill the header information of the report.
 * In Banana select from the **menu Apps** the BananaApp **Cash Flow Report (OHADA - RDC)**.
 * Choose if include or not the previous year accounting file to the report. In case you want to include it, select the accounting file and click on Ok.
 * Check the results.
+
+Report example:
+![Cash Flow Report Example](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/cashflow/images/banana_report.png)
