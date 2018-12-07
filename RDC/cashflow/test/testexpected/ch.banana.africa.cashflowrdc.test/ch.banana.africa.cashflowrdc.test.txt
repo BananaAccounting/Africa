@@ -28,40 +28,47 @@
 \begin{test}{testBananaApps}
 \textvalue{This test will tests the BananaApp cashflow\_rdc.js}\\
 \begin{reportvalue}{Report Cash Flow RDC}
+Désignation de l'entité:  COMPANY NAME \\
+Exercice clos  le 31.12.2018 \\
+Numéro d'identification:  123456789 \\
+Durée (en mois):  12 \\
+RCCM:  112233 XX \\
+  \\
+  \\
 TABLEAU DES FLUX DE TRESORERIE \\
   \\
 \begin{longtable}[l]{ l  l  l  l  l }
-REF  & LIBELLES  &  & EXERCICE N  & EXERCICE N-1 \\
-ZA  & Trésorerie nette au 1er janvier (Trésorerie actif N-1 - trésorerie passif N-1)  & A  & 60.00  & 60.00 \\
+REF  & LIBELLES  &  & EXERCICE 2018  & EXERCICE 2017 \\
+ZA  & Trésorerie nette au 1er janvier (Trésorerie actif N-1 - trésorerie passif N-1)  & A  & 140.00  & 140.00 \\
  & Flux de trésorerie provenant des activités opérationnelles  &  &  & \\
-FA  & Capacité d'Autofinancement Globale (CAFG)  &  & -6.00  & -6.00 \\
+FA  & Capacité d'Autofinancement Globale (CAFG)  &  & -38.00  & -38.00 \\
 FB  & (-) Variation actif circulant HAO  &  & 3.00  & 3.00 \\
 FC  & (-) Variation des stocks  &  & 8.00  & 8.00 \\
 FD  & (-) Variation des créances  &  & -80.00  & -80.00 \\
-FE  & (+) Variation du passif circulant  &  & -3.00  & -3.00 \\
- & Variation du BF lié aux activités opérationnelles (FB+FC+FD+FE)  &  & -72.00  & -72.00 \\
-ZB  & Flux de trésorerie provenant des activités opérationnelles (somme FA à FE)  & B  & -78.00  & -78.00 \\
+FE  & (+) Variation du passif circulant  &  & -5.00  & -5.00 \\
+ & Variation du BF lié aux activités opérationnelles (FB+FC+FD+FE)  &  & -74.00  & -74.00 \\
+ZB  & Flux de trésorerie provenant des activités opérationnelles (somme FA à FE)  & B  & 26.00  & 26.00 \\
  & Flux de trésorerie provenant des activités d'investissements   &  &  & \\
-FF  & Décaissements liés aux acquisitions d'immobilisations incorporelles  &  & 9.00  & 9.00 \\
-FG  & (-) Décaissements liés aux acquisitions d'immobilisations corporelles  &  & 6.00  & 6.00 \\
+FF  & Décaissements liés aux acquisitions d'immobilisations incorporelles  &  & 19.00  & 19.00 \\
+FG  & (-) Décaissements liés aux acquisitions d'immobilisations corporelles  &  & 4.00  & 4.00 \\
 FH  & Décaissements liés aux acquisitions d'immobilisations financières  &  & -5.00  & -5.00 \\
 FI  & (+) Encaissements liés aux cessions d'immobilisations incorporelles et corporelles  &  & 109.00  & 109.00 \\
-FJ  & (+) Encaissements liés aux cessions d'immobilisations financières  &  & 7.00  & 7.00 \\
-ZC  & Flux de trésorerie provenant des activités d'investissement (somme FF à FJ)  & C  & 126.00  & 126.00 \\
+FJ  & (+) Encaissements liés aux cessions d'immobilisations financières  &  & 0.00  & 0.00 \\
+ZC  & Flux de trésorerie provenant des activités d'investissement (somme FF à FJ)  & C  & 119.00  & 119.00 \\
  & Flux de trésorerie provenant du financement par les capitaux propres  &  &  & \\
-FK  & (+) Augmentations de capital par apports nouveaux  &  & 101.00  & 101.00 \\
-FL  & (+) Subventions d'investissement reçues  &  & 27.00  & 27.00 \\
+FK  & (+) Augmentations de capital par apports nouveaux  &  & -51.00  & -51.00 \\
+FL  & (+) Subventions d'investissement reçues  &  & 15.00  & 15.00 \\
 FM  & (-) Prélèvements sur le capital  &  & 10.00  & 10.00 \\
-FN  & (-) Dividendes verses  &  & 5.00  & 5.00 \\
-ZD  & Flux de trésorerie provenant des capitaux propres (somme FK à FN)  & D  & 143.00  & 143.00 \\
+FN  & (-) Dividendes verses  &  & -5.00  & -5.00 \\
+ZD  & Flux de trésorerie provenant des capitaux propres (somme FK à FN)  & D  & -41.00  & -41.00 \\
  & Trésorerie provenant du financement par les capitaux étrangers  &  &  & \\
 FO  & (+) Emprunts  &  & 68.00  & 68.00 \\
 FP  & (+) Autres dettes financières  &  & 7.00  & 7.00 \\
 FQ  & (-) Remboursements des emprunts et autres dettes financières  &  & 65.00  & 65.00 \\
-ZE  & Flux de trésorerie provenant des capitaux étrangers (somme FO à FQ)  & E  & 140.00  & 140.00 \\
-ZF  & Flux de trésorerie provenant des activités de financement (D+E)  & F  & 283.00  & 283.00 \\
-ZG  & VARIATION DE LA TRESORERIE NETTE DE LA PERIODE (B+C+F)  & G  & 331.00  & 331.00 \\
-ZH  & Trésorerie nette au 31 Décembre (G+A) Contrôle : Trésorerie actif N - trésorerie passif N =  & H  & 391.00  & 391.00 \\
+ZE  & Flux de trésorerie provenant des capitaux étrangers (somme FO à FQ)  & E  & 10.00  & 10.00 \\
+ZF  & Flux de trésorerie provenant des activités de financement (D+E)  & F  & -31.00  & -31.00 \\
+ZG  & VARIATION DE LA TRESORERIE NETTE DE LA PERIODE (B+C+F)  & G  & 114.00  & 114.00 \\
+ZH  & Trésorerie nette au 31 Décembre (G+A) Contrôle : Trésorerie actif 2018 - trésorerie passif 2018 =  & H  & 254.00  & 254.00 \\
 \end{longtable}
 \end{reportvalue}
 \keyvalue{Result}{Passed}
