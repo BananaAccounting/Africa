@@ -4,11 +4,11 @@ The BananaApp has been developed following the specific RDC pdf documentations b
 
 Content:
 
-* **ch.banana.africa.cashflowrdc.js**: the BananaApp;
-* **accounting_2018.ac2**: example Banana file for the current year;
-* **accounting_2017.ac2**: example Banana file for the previous year;
-* **Tableau des flux de tresorerie.pdf**: an example of how the report should looks like;
-* **Formules comptales du tableau de flux de trésorerie.pdf**:
+* [ch.banana.africa.cashflowrdc.js](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/cashflow/ch.banana.africa.cashflowrdc.js): the BananaApp;
+* [accounting_2018.ac2](https://github.com/BananaAccounting/Africa/raw/master/RDC/cashflow/accounting_2018.ac2): example Banana file for the current year;
+* [accounting_2017.ac2](https://github.com/BananaAccounting/Africa/raw/master/RDC/cashflow/accounting_2017.ac2): example Banana file for the previous year;
+* [Tableau des flux de tresorerie.pdf](https://github.com/BananaAccounting/Africa/blob/master/RDC/cashflow/Tableau%20des%20flux%20de%20tresorerie.pdf): an example of how the report should looks like;
+* [Formules comptales du tableau de flux de trésorerie.pdf](https://github.com/BananaAccounting/Africa/blob/master/RDC/cashflow/Formules%20comptales%20du%20tableau%20de%20flux%20de%20tr%C3%A9sorerie.pdf):
 	* a document that specifies which data of Banana Accounting to use and how to calculate the various elements of the report.
 	* The syntax is **{account/group, column}**, where **account/group** indicates the account or the group of the Accounts table in Banana (groups begins with **Gr=**); the **column** indicates the type of data (Opening, Debit, Credit, Total(debit-credit)) of the Accounts table in Banana.
 	* The **(-1)** indicates that the value must be inverted. If positive inverts to a negative value, if negative inverts to a positive value.
