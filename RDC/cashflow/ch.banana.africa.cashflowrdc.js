@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.cashflowrdc
 // @api = 1.0
-// @pubdate = 2018-12-07
+// @pubdate = 2018-12-10
 // @publisher = Banana.ch SA
 // @description = Cash Flow Report (OHADA - RDC) [BETA]
 // @description.fr = Tableau des flux de tresorerie (OHADA - RDC) [BETA]
@@ -721,6 +721,7 @@ function calculate_FE(banDoc, startDate, endDate) {
       - account 4042, credit
       - account 4046, credit
       - account 4047, credit
+      - (-Gr=DH, total)
    */
 
    var grDP = getAmount(banDoc,'Gr=DP','total',startDate,endDate);
@@ -729,6 +730,7 @@ function calculate_FE(banDoc, startDate, endDate) {
    var acc4042 = getAmount(banDoc,'4042','credit',startDate,endDate);
    var acc4046 = getAmount(banDoc,'4046','credit',startDate,endDate);
    var acc4047 = getAmount(banDoc,'4047','credit',startDate,endDate);
+   var grDH = getAmount(banDoc,'Gr=DH','total',startDate,endDate);
    var res = 0;
    res = Banana.SDecimal.add(res, Banana.SDecimal.invert(grDP));
    res = Banana.SDecimal.add(res,acc479);
@@ -736,6 +738,7 @@ function calculate_FE(banDoc, startDate, endDate) {
    res = Banana.SDecimal.subtract(res,acc4042);
    res = Banana.SDecimal.subtract(res,acc4046);
    res = Banana.SDecimal.subtract(res,acc4047);
+   res = Banana.SDecimal.subtract(res, Banana.SDecimal.invert(grDH));
    return res;
 }
 
