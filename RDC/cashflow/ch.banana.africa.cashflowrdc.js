@@ -48,16 +48,10 @@ function exec() {
       return "@Cancel";
    }
 
-   //Show the user a dialog window asking if include or not a second file
-   var usePreviousYearFile = Banana.Ui.showQuestion("Tableau de flux de trésorerie", "Voulez-vous inclure le dossier de l'année précédente?");
-   if (usePreviousYearFile) {
-      /* PREVIOUS year file:
-         open a dialog window to select the previous year .ac2 file */
-      var previous = Banana.application.openDocument("*.*");
-      if (!previous) {
-         return "@Cancel";
-      }
-   }
+   /* PREVIOUS year file:
+      Return the previous year document.
+      If the previous year is not defined or it is not foud it returns null */
+   var previous = Banana.document.previousYear();
 
    var report = createReport(current, previous);
    var stylesheet = createStyleSheet();
