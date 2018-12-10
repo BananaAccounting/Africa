@@ -20,11 +20,14 @@ In Banana select from the **menu File** the command **File and accounting propet
 * Insert the **company name** in the Company field.
 * Insert the **Designation of the entity number** in the Fiscal number field.
 * Insert the **Identification number** in the Vat/Sales tex number.
+
+The data inserted will be used to fill the header information of the report.
+
 ### Options
 * Select the **Options** tab.
 * Insert the **file from previous year**. 
 
-The data inserted will be used to fill the header information of the report.
+This is optional: if the previous year file is selected it is used to calculate and then insert on the report the data in the EXERCICE N-1 column. If no file is selected, the EXERCICE N-1 column will be empty.
 
 ## How it works
 
