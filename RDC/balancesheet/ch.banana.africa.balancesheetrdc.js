@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.balancesheetrdc
 // @api = 1.0
-// @pubdate = 2018-12-17
+// @pubdate = 2018-12-18
 // @publisher = Banana.ch SA
 // @description = Balance sheet  Report (OHADA - RDC) [BETA]
 // @description.fr = Bilan (OHADA - RDC) [BETA]
@@ -38,14 +38,13 @@
 
 function exec() {
 
-   /* CURRENT year file:
-      the current opened document in Banana */
+   // CURRENT year file: the current opened document in Banana */
    var current = Banana.document;
    if (!current) {
       return "@Cancel";
    }
 
-   var report = createReport(current);
+   var report = createBalanceSheetReport(current);
    var stylesheet = createStyleSheet();
    Banana.Report.preview(report, stylesheet);
 }
@@ -56,7 +55,7 @@ function exec() {
 * Function that create the report
 *
 **************************************************************************************/
-function createReport(current) {
+function createBalanceSheetReport(current,report) {
 
    // Accounting period for the current year file
    var currentStartDate = current.info("AccountingDataBase","OpeningDate");
@@ -68,16 +67,15 @@ function createReport(current) {
    var fiscalNumber = current.info("AccountingDataBase","FiscalNumber");
    var vatNumber = current.info("AccountingDataBase","VatNumber");
 
-   var report = Banana.Report.newReport("Bilan");
-   var paragraph;
-
-
+   if (!report) {
+      var report = Banana.Report.newReport("Bilan");
+   }
 
    /*******************************************************************************************
    *  Active Balance sheet
    *******************************************************************************************/
    // Header of the report
-   paragraph = report.addParagraph("","");
+   var paragraph = report.addParagraph("","");
    paragraph.addText("Désignation de l'entité: ", "bold");
    if (company) {
       paragraph.addText(company, "");
@@ -897,23 +895,6 @@ function monthDiff(d1, d2) {
    return months;
 }
 
-// function calculate_AZ(AE,AF,AG,AH,AJ,AK,AL,AM,AN,AP,AR,AS) {
-//    var res = "";
-//    res = Banana.SDecimal.add(res,AE);
-//    res = Banana.SDecimal.add(res,AF);
-//    res = Banana.SDecimal.add(res,AG);
-//    res = Banana.SDecimal.add(res,AH);
-//    res = Banana.SDecimal.add(res,AJ);
-//    res = Banana.SDecimal.add(res,AK);
-//    res = Banana.SDecimal.add(res,AL);
-//    res = Banana.SDecimal.add(res,AM);
-//    res = Banana.SDecimal.add(res,AN);
-//    res = Banana.SDecimal.add(res,AP);
-//    res = Banana.SDecimal.add(res,AR);
-//    res = Banana.SDecimal.add(res,AS);
-//    return res;
-// }
-
 function calculate_BZ(AZ,BK,BT,BU) {
    var res = "";
    res = Banana.SDecimal.add(res,AZ);
@@ -922,8 +903,6 @@ function calculate_BZ(AZ,BK,BT,BU) {
    res = Banana.SDecimal.add(res,BU);
    return res;
 }
-
-
 
 /**************************************************************************************
 *

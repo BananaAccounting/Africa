@@ -1,0 +1,9 @@
+<!DOCTYPE RCC><RCC version="1.0">
+	<qresource>
+		<file>ch.banana.africa.reportsohadardc.manifest.json</file>
+		<file>ch.banana.africa.reportsohadardc.js</file>
+		<file alias="balancesheet.inc">balancesheet/ch.banana.africa.balancesheetrdc.js</file>
+		<file alias="profitlossstatement.inc">profitlossstatement/ch.banana.africa.profitlossstatementrdc.js</file>
+		<file alias="cashflow.inc">cashflow/ch.banana.africa.cashflowrdc.js</file>
+	</qresource>
+</RCC>

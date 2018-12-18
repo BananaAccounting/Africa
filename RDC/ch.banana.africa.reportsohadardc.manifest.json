@@ -1,0 +1,15 @@
+{
+    "category": "productivity",
+    "country": "africa",
+    "countryCode": "af",
+    "description": "Accounting Reports (OHADA - RDC) [BETA]",
+    "description.en": "Accounting Reports (OHADA - RDC) [BETA]",
+    "description.fr": "Rapports comptables (OHADA - RDC) [BETA]",
+    "id": "ch.banana.africa.reportsohadardc",
+    "language": "fr",
+    "publisher": "Banana.ch",
+    "title": "Accounting Reports (OHADA - RDC) [BETA]",
+    "title.en": "Accounting Reports (OHADA - RDC) [BETA]",
+    "title.fr": "Rapports comptables (OHADA - RDC) [BETA]",
+    "version": "1.0"
+}

@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.cashflowrdc
 // @api = 1.0
-// @pubdate = 2018-12-10
+// @pubdate = 2018-12-18
 // @publisher = Banana.ch SA
 // @description = Cash Flow Report (OHADA - RDC) [BETA]
 // @description.fr = Tableau des flux de tresorerie (OHADA - RDC) [BETA]
@@ -41,46 +41,27 @@
 
 function exec() {
 
-   /* CURRENT year file:
-      the current opened document in Banana */
+   //CURRENT year file: the current opened document in Banana */
    var current = Banana.document;
    if (!current) {
       return "@Cancel";
    }
 
-   /* PREVIOUS year file:
-      Return the previous year document.
-      If the previous year is not defined or it is not foud it returns null */
+   // PREVIOUS year file: Return the previous year document.
+   // If the previous year is not defined or it is not foud it returns null */
    var previous = Banana.document.previousYear();
 
-   var report = createReport(current, previous);
+   var report = createCashFlowReport(current, previous);
    var stylesheet = createStyleSheet();
    Banana.Report.preview(report, stylesheet);
 }
-
 
 /**************************************************************************************
 *
 * Function that create the report
 *
 **************************************************************************************/
-function monthDiff(d1, d2) {
-   if (d2 < d1) { 
-      var dTmp = d2;
-      d2 = d1;
-      d1 = dTmp;
-   }
-   var months = (d2.getFullYear() - d1.getFullYear()) * 12;
-   months -= d1.getMonth(); //+1
-   months += d2.getMonth();
-
-   if (d1.getDate() <= d2.getDate()) {
-      months += 1;
-   }
-   return months;
-}
-
-function createReport(current, previous) {
+function createCashFlowReport(current, previous, report) {
 
    // Accounting period for the current year file
    var currentStartDate = current.info("AccountingDataBase","OpeningDate");
@@ -98,11 +79,12 @@ function createReport(current, previous) {
       var previousYear = Banana.Converter.toDate(previousStartDate).getFullYear();
    }
 
-   var report = Banana.Report.newReport("Cash Flow");
-   var paragraph;
+   if (!report) {
+      var report = Banana.Report.newReport("Cash Flow");
+   }
 
    // Header of the report
-   paragraph = report.addParagraph("","");
+   var paragraph = report.addParagraph("","");
    paragraph.addText("Désignation de l'entité: ", "bold");
    if (company) {
       paragraph.addText(company, "");
@@ -1117,6 +1099,21 @@ function calculate_tot_ZH(ZG,ZA) {
    return res;
 }
 
+function monthDiff(d1, d2) {
+   if (d2 < d1) { 
+      var dTmp = d2;
+      d2 = d1;
+      d1 = dTmp;
+   }
+   var months = (d2.getFullYear() - d1.getFullYear()) * 12;
+   months -= d1.getMonth(); //+1
+   months += d2.getMonth();
+
+   if (d1.getDate() <= d2.getDate()) {
+      months += 1;
+   }
+   return months;
+}
 
 /**************************************************************************************
 *

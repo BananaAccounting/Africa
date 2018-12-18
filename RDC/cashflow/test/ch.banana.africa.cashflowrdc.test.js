@@ -136,7 +136,7 @@ TestCashflowRDC.prototype.testBananaApps = function() {
    Test.assert(previousDocument, "Previous year file ac2 not found");
    
    // Add the report content text to the result txt file
-   var report = createReport(currentDocument, previousDocument);
+   var report = createCashFlowReport(currentDocument, previousDocument);
    Test.logger.addReport("Report Cash Flow RDC", report);
 
 }
