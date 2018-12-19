@@ -11,7 +11,7 @@ The app has been developed following the specific OHADA-RDC documentations:
 * [Cash Flow documentation](https://github.com/BananaAccounting/Africa/blob/master/RDC/cashflow/cashflow_documentation.pdf)
 
 BananaApps:
-* [All-in one package report app](https://github.com/BananaAccounting/Africa/raw/master/RDC/ch.banana.africa.reportsohadardc.sbaa)
+* [All-in-one package report app](https://github.com/BananaAccounting/Africa/raw/master/RDC/ch.banana.africa.reportsohadardc.sbaa)
 * [Balance Sheet report app](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/balancesheet/ch.banana.africa.balancesheetrdc.js)
 * [Profit/Loss Statement app](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/profitlossstatement/ch.banana.africa.profitlossstatementrdc.js)
 * [Cash Flow report app](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/cashflow/ch.banana.africa.cashflowrdc.js)
