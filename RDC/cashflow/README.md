@@ -36,7 +36,7 @@ This is optional: if the previous year file is selected it is used to calculate 
 
 ### Run the BananaApp:
 * Open your accounting file with Banana (or download the [accounting_2018.ac2](https://github.com/BananaAccounting/Africa/raw/master/RDC/cashflow/accounting_2018.ac2) file example).
-* In Banana select from the **menu Apps** the BananaApp **Cash Flow Report (OHADA - RDC)**.
+* In Banana select from the **menu Apps** the BananaApp **Accounting Reports (OHADA - RDC)** then **Balance Sheet, Profit/Loss Statement, Cash Flow**.
 * Check the results.
 
 Report example:
