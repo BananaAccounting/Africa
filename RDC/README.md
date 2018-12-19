@@ -1,6 +1,6 @@
 # Accounting reports for OHADA-RDC
 
-The BananaApp creates a report with the following three reports documents:
+The BananaApp creates a report with the following three documents:
 * Balance Sheet
 * Profit/Loss Statement
 * Cash Flow
