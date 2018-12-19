@@ -32,7 +32,7 @@ This is optional: if the previous year file is selected it is used to calculate 
 
 ### Install the BananaApp:
 * Start Banana Accounting.
-* Install the BananaApp **Cash Flow Report (OHADA - RDC)** for the Cash Flow report only, or the BananaApp **Accounting Reports (OHADA - RDC)** for the Balance Sheet, Profit/Loss Statement and Cash Flow package reports. Visit the [Menu Apps](https://www.banana.ch/doc9/en/node/4727) documentation.
+* Install the BananaApp **Accounting Reports (OHADA - RDC)** for the Balance Sheet, Profit/Loss Statement and Cash Flow package reports. Visit the [Menu Apps](https://www.banana.ch/doc9/en/node/4727) documentation.
 
 ### Run the BananaApp:
 * Open your accounting file with Banana (or download the [accounting_2018.ac2](https://github.com/BananaAccounting/Africa/raw/master/RDC/cashflow/accounting_2018.ac2) file example).
