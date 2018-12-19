@@ -125,14 +125,14 @@ function createCashFlowReport(current, previous, report) {
    var tableRow;
    
    tableRow = table.addRow();
-   tableRow.addCell("REF","blackCell bold",1);
-   tableRow.addCell("LIBELLES","blackCell bold",1);
-   tableRow.addCell("","blackCell bold",1);
-   tableRow.addCell("EXERCICE " + currentYear,"blackCell bold",1);
+   tableRow.addCell("REF","bold",1);
+   tableRow.addCell("LIBELLES","bold",1);
+   tableRow.addCell("","bold",1);
+   tableRow.addCell("EXERCICE " + currentYear,"bold",1);
    if (previous) {
-      tableRow.addCell("EXERCICE " + previousYear,"blackCell bold",1);
+      tableRow.addCell("EXERCICE " + previousYear,"bold",1);
    } else {
-      tableRow.addCell("EXERCICE N-1","blackCell bold",1);
+      tableRow.addCell("EXERCICE N-1","bold",1);
    }
 
    /* Row 1: ZA */
@@ -456,8 +456,8 @@ function createCashFlowReport(current, previous, report) {
    }
    tableRow = table.addRow();
    tableRow.addCell("ZD","",1);
-   tableRow.addCell("Flux de trésorerie provenant des capitaux propres (somme FK à FN)","bold blackCell",1);
-   tableRow.addCell("D","center bold blackCell",1);
+   tableRow.addCell("Flux de trésorerie provenant des capitaux propres (somme FK à FN)","bold greyCell",1);
+   tableRow.addCell("D","center bold greyCell",1);
    tableRow.addCell(formatValues(ZD_exerciceN),"right bold",1);
    if (previous) {
       tableRow.addCell(formatValues(ZD_exerciceN1),"right bold",1);
@@ -528,8 +528,8 @@ function createCashFlowReport(current, previous, report) {
    }
    tableRow = table.addRow();
    tableRow.addCell("ZE","",1);
-   tableRow.addCell("Flux de trésorerie provenant des capitaux étrangers (somme FO à FQ)","bold blackCell",1);
-   tableRow.addCell("E","center bold blackCell",1);
+   tableRow.addCell("Flux de trésorerie provenant des capitaux étrangers (somme FO à FQ)","bold greyCell",1);
+   tableRow.addCell("E","center bold greyCell",1);
    tableRow.addCell(formatValues(ZE_exerciceN),"right bold",1);
    if (previous) {
       tableRow.addCell(formatValues(ZE_exerciceN1),"right bold",1);

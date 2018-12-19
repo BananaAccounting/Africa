@@ -118,29 +118,29 @@ function createBalanceSheetReport(current,report) {
    var tableRow;
 
    tableRow = table.addRow();
-   tableRow.addCell("REF","greyCell bold center",1).setStyleAttributes("border-top:thin solid black;border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("ACTIF","greyCell bold center",1).setStyleAttributes("border-top:thin solid black;border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("Note","greyCell bold center",1).setStyleAttributes("border-top:thin solid black;border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("EXERCICE AU 31/12/" + currentYear,"greyCell bold center",3).setStyleAttributes("border-top:thin solid black;border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("EXERCICE AU 31/12/" + previousYear,"greyCell bold center",1).setStyleAttributes("border-top:thin solid black;border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("REF","bold center",1).setStyleAttributes("border-top:thin solid black;border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("ACTIF","bold center",1).setStyleAttributes("border-top:thin solid black;border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("Note","bold center",1).setStyleAttributes("border-top:thin solid black;border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("EXERCICE AU 31/12/" + currentYear,"bold center",3).setStyleAttributes("border-top:thin solid black;border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("EXERCICE AU 31/12/" + previousYear,"bold center",1).setStyleAttributes("border-top:thin solid black;border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
    tableRow = table.addRow();
-   tableRow.addCell("","greyCell bold center",1).setStyleAttributes("border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","greyCell bold center",1).setStyleAttributes("border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","greyCell bold center",1).setStyleAttributes("border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("BRUT " + currentYear,"greyCell bold center",1).setStyleAttributes("border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("AMORT et DEPREC.","greyCell bold center",1).setStyleAttributes("border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("NET","greyCell bold center",1).setStyleAttributes("border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("NET","greyCell bold center",1).setStyleAttributes("border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","bold center",1).setStyleAttributes("border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","bold center",1).setStyleAttributes("border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","bold center",1).setStyleAttributes("border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("BRUT " + currentYear,"bold center",1).setStyleAttributes("border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("AMORT et DEPREC.","bold center",1).setStyleAttributes("border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("NET","bold center",1).setStyleAttributes("border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("NET","bold center",1).setStyleAttributes("border-left:thin solid black;border-right:thin solid black;padding-bottom:2px;padding-top:5px");
 
    /* Row 1: AD */
    tableRow = table.addRow();
-   tableRow.addCell("AD","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("IMMOBILISATIONS INCORPORELLES","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("3","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("AD","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("IMMOBILISATIONS INCORPORELLES","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("3","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
 
    /* Row 2: AE */
    var AE1_exerciceN = getAmount(current,'Gr=AE-1','balance',currentStartDate,currentEndDate);
@@ -200,13 +200,13 @@ function createBalanceSheetReport(current,report) {
 
    /* Row 6: AI */
    tableRow = table.addRow();
-   tableRow.addCell("AI","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("IMMOBILISATIONS CORPORELLES","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("3","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("AI","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("IMMOBILISATIONS CORPORELLES","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("3","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
    
    /* Row 7: AJ */
    var AJ1_exerciceN = getAmount(current,'Gr=AJ-1','balance',currentStartDate,currentEndDate);
@@ -295,13 +295,13 @@ function createBalanceSheetReport(current,report) {
 
    /* Row 13: AQ */
    tableRow = table.addRow();
-   tableRow.addCell("AQ","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("IMMOBILISATIONS FINANCIERES","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("4","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("AQ","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("IMMOBILISATIONS FINANCIERES","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("4","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
    
    /* Row 14: AR */
    var AR1_exerciceN = getAmount(current,'Gr=AR-1','balance',currentStartDate,currentEndDate);
@@ -339,13 +339,13 @@ function createBalanceSheetReport(current,report) {
    var AZ_exerciceN = getAmount(current,'Gr=AZ','balance',currentStartDate,currentEndDate);
    var AZ_exerciceN1 = getAmount(current,'Gr=AZ','opening',currentStartDate,currentEndDate);
    tableRow = table.addRow();
-   tableRow.addCell("AZ","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("TOTAL ACTIF IMMOBILISE","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(AZ1_exerciceN),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(AZ2_exerciceN),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(AZ_exerciceN),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(AZ_exerciceN1),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("AZ","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("TOTAL ACTIF IMMOBILISE","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(AZ1_exerciceN),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(AZ2_exerciceN),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(AZ_exerciceN),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(AZ_exerciceN1),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
 
    /* Row 17: BA */
    var BA1_exerciceN = getAmount(current,'Gr=BA-1','balance',currentStartDate,currentEndDate);
@@ -433,13 +433,13 @@ function createBalanceSheetReport(current,report) {
    var BK_exerciceN = getAmount(current,'Gr=BK','balance',currentStartDate,currentEndDate);
    var BK_exerciceN1 = getAmount(current,'Gr=BK','opening',currentStartDate,currentEndDate);
    tableRow = table.addRow();
-   tableRow.addCell("BK","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("TOTAL ACTIF CIRCULANT","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(BK1_exerciceN),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(BK2_exerciceN),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(BK_exerciceN),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(BK_exerciceN1),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("BK","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("TOTAL ACTIF CIRCULANT","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(BK1_exerciceN),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(BK2_exerciceN),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(BK_exerciceN),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(BK_exerciceN1),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
 
    /* Row 24: BQ */
    var BQ1_exerciceN = getAmount(current,'Gr=BQ-1','balance',currentStartDate,currentEndDate);
@@ -489,13 +489,13 @@ function createBalanceSheetReport(current,report) {
    var BT_exerciceN = getAmount(current,'Gr=BT','balance',currentStartDate,currentEndDate);
    var BT_exerciceN1 = getAmount(current,'Gr=BT','opening',currentStartDate,currentEndDate);
    tableRow = table.addRow();
-   tableRow.addCell("BT","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("TOTAL TRESORERIE-ACTIF","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(BT1_exerciceN),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(BT2_exerciceN),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(BT_exerciceN),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(BT_exerciceN1),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("BT","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("TOTAL TRESORERIE-ACTIF","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(BT1_exerciceN),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(BT2_exerciceN),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(BT_exerciceN),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(BT_exerciceN1),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
 
    /* Row 28: BU */
    var BU1_exerciceN = getAmount(current,'Gr=BU-1','balance',currentStartDate,currentEndDate);
@@ -517,13 +517,13 @@ function createBalanceSheetReport(current,report) {
    var BZ_exerciceN = calculate_BZ(AZ_exerciceN,BK_exerciceN,BT_exerciceN,BU_exerciceN);
    var BZ_exerciceN1 = calculate_BZ(AZ_exerciceN1,BK_exerciceN1,BT_exerciceN1,BU_exerciceN1);
    tableRow = table.addRow();
-   tableRow.addCell("BZ","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("TOTAL GENERAL","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell("","blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(BZ1_exerciceN),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(BZ2_exerciceN),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(BZ_exerciceN),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(BZ_exerciceN1),"right blueCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("BZ","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("TOTAL GENERAL","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(BZ1_exerciceN),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(BZ2_exerciceN),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(BZ_exerciceN),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(BZ_exerciceN1),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
 
 
 
@@ -575,20 +575,20 @@ function createBalanceSheetReport(current,report) {
    var tableRow;
    
    tableRow = table.addRow();
-   tableRow.addCell("REF","greyCell bold center",1);
-   tableRow.addCell("PASSIF","greyCell bold center",1);
-   tableRow.addCell("Note","greyCell bold center",1);
-   var cell = tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell("REF","bold center",1);
+   tableRow.addCell("PASSIF","bold center",1);
+   tableRow.addCell("Note","bold center",1);
+   var cell = tableRow.addCell("","bold",1);
    cell.addParagraph("EXERCICE AU 31/12/" + currentYear,"center");
    cell.addParagraph(" ", "");
    cell.addParagraph("NET", "center");
-   var cell = tableRow.addCell("","greyCell bold",1);
+   var cell = tableRow.addCell("","bold",1);
    cell.addParagraph("EXERCICE AU 31/12/" + previousYear,"center");
    cell.addParagraph(" ", "");
    cell.addParagraph("NET", "center");
 
-   //tableRow.addCell("EXERCICE AU 31/12/" + currentYear,"blueCell bold",1);
-   //tableRow.addCell("EXERCICE AU 31/12/" + previousYear,"blueCell bold",1);
+   //tableRow.addCell("EXERCICE AU 31/12/" + currentYear,"greyCell bold",1);
+   //tableRow.addCell("EXERCICE AU 31/12/" + previousYear,"greyCell bold",1);
 
    /* Row 1: CA */
    var CA_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=CA','balance',currentStartDate,currentEndDate));
@@ -694,11 +694,11 @@ function createBalanceSheetReport(current,report) {
    var CP_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=CP','balance',currentStartDate,currentEndDate));
    var CP_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=CP','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("CP","blueCell bold",1);
-   tableRow.addCell("TOTAL CAPITAUX PROPRES ET RESSOURCES ASSIMILEES","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell(formatValues(CP_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(CP_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("CP","greyCell bold",1);
+   tableRow.addCell("TOTAL CAPITAUX PROPRES ET RESSOURCES ASSIMILEES","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell(formatValues(CP_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(CP_exerciceN1),"right greyCell bold",1);
 
    /* Row 12: DA */
    var DA_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=DA','balance',currentStartDate,currentEndDate));
@@ -734,21 +734,21 @@ function createBalanceSheetReport(current,report) {
    var DD_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=DD','balance',currentStartDate,currentEndDate));
    var DD_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=DD','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("DD","blueCell bold",1);
-   tableRow.addCell("TOTAL DETTES FINANCIERES ET RESSOURCES ASSIMILEES","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell(formatValues(DD_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(DD_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("DD","greyCell bold",1);
+   tableRow.addCell("TOTAL DETTES FINANCIERES ET RESSOURCES ASSIMILEES","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell(formatValues(DD_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(DD_exerciceN1),"right greyCell bold",1);
 
    /* Row 16: DF */
    var DF_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=DF','balance',currentStartDate,currentEndDate));
    var DF_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=DF','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("DF","blueCell bold",1);
-   tableRow.addCell("TOTAL RESSOURCES STABLES","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell(formatValues(DF_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(DF_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("DF","greyCell bold",1);
+   tableRow.addCell("TOTAL RESSOURCES STABLES","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell(formatValues(DF_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(DF_exerciceN1),"right greyCell bold",1);
 
    /* Row 17: DH */
    var DH_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=DH','balance',currentStartDate,currentEndDate));
@@ -814,11 +814,11 @@ function createBalanceSheetReport(current,report) {
    var DP_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=DP','balance',currentStartDate,currentEndDate));
    var DP_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=DP','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("DP","blueCell bold",1);
-   tableRow.addCell("TOTAL PASSIF CIRCULANT","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell(formatValues(DP_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(DP_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("DP","greyCell bold",1);
+   tableRow.addCell("TOTAL PASSIF CIRCULANT","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell(formatValues(DP_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(DP_exerciceN1),"right greyCell bold",1);
 
    /* Row 24: DQ */
    var DQ_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=DQ','balance',currentStartDate,currentEndDate));
@@ -844,11 +844,11 @@ function createBalanceSheetReport(current,report) {
    var DT_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=DT','balance',currentStartDate,currentEndDate));
    var DT_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=DT','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("DT","blueCell bold",1);
-   tableRow.addCell("TOTAL TRESORERIE-PASSIF","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell(formatValues(DT_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(DT_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("DT","greyCell bold",1);
+   tableRow.addCell("TOTAL TRESORERIE-PASSIF","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell(formatValues(DT_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(DT_exerciceN1),"right greyCell bold",1);
 
    /* Row 27: DV */
    var DV_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=DV','balance',currentStartDate,currentEndDate));
@@ -864,11 +864,11 @@ function createBalanceSheetReport(current,report) {
    var DZ_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=DZ','balance',currentStartDate,currentEndDate));
    var DZ_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=DZ','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("DZ","blueCell bold",1);
-   tableRow.addCell("TOTAL GENERAL","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell(formatValues(DZ_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(DZ_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("DZ","greyCell bold",1);
+   tableRow.addCell("TOTAL GENERAL","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell(formatValues(DZ_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(DZ_exerciceN1),"right greyCell bold",1);
 
    return report;
 }

@@ -112,18 +112,18 @@ function createProfitLossStatementReport(current,report) {
    var tableRow;
    
    tableRow = table.addRow();
-   tableRow.addCell("REF","greyCell bold center",1);
-   tableRow.addCell("LIBELLES","greyCell bold center",1);
-   tableRow.addCell("", "greyCell bold center", 1);
-   tableRow.addCell("Note","greyCell bold center",1);
-   var cell = tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell("REF","bold center",1);
+   tableRow.addCell("LIBELLES","bold center",1);
+   tableRow.addCell("", "bold center", 1);
+   tableRow.addCell("Note","bold center",1);
+   var cell = tableRow.addCell("","bold center",1);
    cell.addParagraph("EXERCICE AU 31/12/" + currentYear,"center");
    cell.addParagraph(" ", "");
-   cell.addParagraph("NET", "center");
-   var cell = tableRow.addCell("","greyCell bold",1);
+   cell.addParagraph("NET", "");
+   var cell = tableRow.addCell("","bold center",1);
    cell.addParagraph("EXERCICE AU 31/12/" + previousYear,"center");
    cell.addParagraph(" ", "");
-   cell.addParagraph("NET", "center");
+   cell.addParagraph("NET", "");
 
    /* Row 1: TA */
    var TA_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=TA','balance',currentStartDate,currentEndDate));
@@ -162,12 +162,12 @@ function createProfitLossStatementReport(current,report) {
    var XA_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=132','balance',currentStartDate,currentEndDate));
    var XA_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=132','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("XA","blueCell bold",1);
-   tableRow.addCell("MARGE COMMERCIALE (Somme TA à RB)","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell(formatValues(XA_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(XA_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("XA","greyCell bold",1);
+   tableRow.addCell("MARGE COMMERCIALE (Somme TA à RB)","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell(formatValues(XA_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(XA_exerciceN1),"right greyCell bold",1);
 
    /* Row 5: TB */
    var TB_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=TB','balance',currentStartDate,currentEndDate));
@@ -208,12 +208,12 @@ function createProfitLossStatementReport(current,report) {
    var XB_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=TA|TB|TC|TD','balance',currentStartDate,currentEndDate));
    var XB_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=TA|TB|TC|TD','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("XB","blueCell bold",1);
-   tableRow.addCell("CHIFFRE D'AFFAIRES (A + B + C + D)","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell(formatValues(XB_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(XB_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("XB","greyCell bold",1);
+   tableRow.addCell("CHIFFRE D'AFFAIRES (A + B + C + D)","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell(formatValues(XB_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(XB_exerciceN1),"right greyCell bold",1);
 
    /* Row 9: TE */
    var TE_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=TE','balance',currentStartDate,currentEndDate));
@@ -362,12 +362,12 @@ function createProfitLossStatementReport(current,report) {
    var XC_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=133','balance',currentStartDate,currentEndDate));
    var XC_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=133','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("XC","blueCell bold",1);
-   tableRow.addCell("VALEUR AJOUTEE (XB+RA+RB) + (somme TE à RJ)","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell(formatValues(XC_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(XC_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("XC","greyCell bold",1);
+   tableRow.addCell("VALEUR AJOUTEE (XB+RA+RB) + (somme TE à RJ)","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell(formatValues(XC_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(XC_exerciceN1),"right greyCell bold",1);
 
    /* Row 20: RK */
    var RK_exerciceN = getAmount(current,'Gr=RK','balance',currentStartDate,currentEndDate);
@@ -384,12 +384,12 @@ function createProfitLossStatementReport(current,report) {
    var XD_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=134','balance',currentStartDate,currentEndDate));
    var XD_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=134','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("XD","blueCell bold",1);
-   tableRow.addCell("EXCEDENT BRUT D'EXPLOITATION (XC+RK)","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell("28","blueCell bold",1);
-   tableRow.addCell(formatValues(XD_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(XD_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("XD","greyCell bold",1);
+   tableRow.addCell("EXCEDENT BRUT D'EXPLOITATION (XC+RK)","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell("28","greyCell bold",1);
+   tableRow.addCell(formatValues(XD_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(XD_exerciceN1),"right greyCell bold",1);
 
    /* Row 22: TJ */
    var TJ_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=TJ','balance',currentStartDate,currentEndDate));
@@ -417,12 +417,12 @@ function createProfitLossStatementReport(current,report) {
    var XE_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=135','balance',currentStartDate,currentEndDate));
    var XE_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=135','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("XE","blueCell bold",1);
-   tableRow.addCell("RESULTAT D'EXPLOITATION (XD+TJ+RL)","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell(formatValues(XE_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(XE_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("XE","greyCell bold",1);
+   tableRow.addCell("RESULTAT D'EXPLOITATION (XD+TJ+RL)","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell(formatValues(XE_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(XE_exerciceN1),"right greyCell bold",1);
 
    /* Row 25: TK */
    var TK_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=TK','balance',currentStartDate,currentEndDate));
@@ -483,23 +483,23 @@ function createProfitLossStatementReport(current,report) {
    var XF_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=136','balance',currentStartDate,currentEndDate));
    var XF_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=136','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("XF","blueCell bold",1);
-   tableRow.addCell("RESULTAT FINANCIER (somme TK à RN)","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell(formatValues(XF_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(XF_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("XF","greyCell bold",1);
+   tableRow.addCell("RESULTAT FINANCIER (somme TK à RN)","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell(formatValues(XF_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(XF_exerciceN1),"right greyCell bold",1);
 
    /* Row 31: XG */
    var XG_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=137','balance',currentStartDate,currentEndDate));
    var XG_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=137','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("XG","blueCell bold",1);
-   tableRow.addCell("RESULTAT DES ACTIVITES ORDINAIRES (XE+XF)","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell(formatValues(XG_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(XG_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("XG","greyCell bold",1);
+   tableRow.addCell("RESULTAT DES ACTIVITES ORDINAIRES (XE+XF)","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell(formatValues(XG_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(XG_exerciceN1),"right greyCell bold",1);
 
    /* Row 32: TN */
    var TN_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=TN','balance',currentStartDate,currentEndDate));
@@ -549,12 +549,12 @@ function createProfitLossStatementReport(current,report) {
    var XH_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=138','balance',currentStartDate,currentEndDate));
    var XH_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=138','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("XH","blueCell bold",1);
-   tableRow.addCell("RESULTAT HORS ACTIVITES ORDINAIRES (somme TN à RP)","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell(formatValues(XH_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(XH_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("XH","greyCell bold",1);
+   tableRow.addCell("RESULTAT HORS ACTIVITES ORDINAIRES (somme TN à RP)","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell(formatValues(XH_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(XH_exerciceN1),"right greyCell bold",1);
 
    /* Row 37: RQ */
    var RQ_exerciceN = getAmount(current,'Gr=RQ','balance',currentStartDate,currentEndDate);
@@ -582,12 +582,12 @@ function createProfitLossStatementReport(current,report) {
    var XI_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=131','balance',currentStartDate,currentEndDate));
    var XI_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=131','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
-   tableRow.addCell("XI","blueCell bold",1);
-   tableRow.addCell("RESULTAT NET (XG+XH+RQ+RS)","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell("","blueCell bold",1);
-   tableRow.addCell(formatValues(XI_exerciceN),"right blueCell bold",1);
-   tableRow.addCell(formatValues(XI_exerciceN1),"right blueCell bold",1);
+   tableRow.addCell("XI","greyCell bold",1);
+   tableRow.addCell("RESULTAT NET (XG+XH+RQ+RS)","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell("","greyCell bold",1);
+   tableRow.addCell(formatValues(XI_exerciceN),"right greyCell bold",1);
+   tableRow.addCell(formatValues(XI_exerciceN1),"right greyCell bold",1);
 
    return report;
 }
