@@ -1,6 +1,6 @@
 # Accounting reports for OHADA-RDC
 
-The BananaApp creates a report with the following three documents:
+The BananaApp [Accounting Reports (OHADA - RDC)](https://www.banana.ch/apps/fr/node/9093) creates a report with the following three documents:
 * Balance Sheet
 * Profit/Loss Statement
 * Cash Flow
@@ -10,11 +10,10 @@ The app has been developed following the specific OHADA-RDC documentations:
 * [Profit/Loss Statement documentation](https://github.com/BananaAccounting/Africa/blob/master/RDC/profitlossstatement/profitlosstatement_documentation.pdf)
 * [Cash Flow documentation](https://github.com/BananaAccounting/Africa/blob/master/RDC/cashflow/cashflow_documentation.pdf)
 
-BananaApps:
-* [All-in-one package report app](https://github.com/BananaAccounting/Africa/raw/master/RDC/ch.banana.africa.reportsohadardc.sbaa)
-* [Balance Sheet report app](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/balancesheet/ch.banana.africa.balancesheetrdc.js)
-* [Profit/Loss Statement app](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/profitlossstatement/ch.banana.africa.profitlossstatementrdc.js)
-* [Cash Flow report app](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/cashflow/ch.banana.africa.cashflowrdc.js)
+JavaScript files:
+* [Balance Sheet JavaScript file](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/balancesheet/ch.banana.africa.balancesheetrdc.js)
+* [Profit/Loss Statement JavaScript file](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/profitlossstatement/ch.banana.africa.profitlossstatementrdc.js)
+* [Cash Flow JavaScript file](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/cashflow/ch.banana.africa.cashflowrdc.js)
 
 
 ## Banana Accounting file settings
