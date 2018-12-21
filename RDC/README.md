@@ -27,6 +27,14 @@ In Banana select from the **menu File** the command **File and accounting propet
 
 The data inserted will be used to fill the header information of the report.
 
+### Options
+* Select the **Options** tab.
+* Insert the **file from previous year**. 
+
+The file from previous year is used only for the Cash Flow report.
+It is optional: if the previous year file is selected it is used to calculate and then insert on the report the data in the EXERCICE N-1 column. If no file is selected, the EXERCICE N-1 column will be empty.
+
+
 ## How it works
 
 ### Install the BananaApp:
