@@ -1,6 +1,6 @@
 # Cash Flow Report
 
-The **Cash Flow Report** is part of the BananaApp **[Accounting Reports (OHADA - RDC)](https://www.banana.ch/apps/fr/node/9093)** and it's been developed following the specific [OHADA-RDC Cash Flow Documentation](https://github.com/BananaAccounting/Africa/blob/master/RDC/cashflow/cashflow_documentation.pdf)
+The **Cash Flow Report** is part of the BananaApp [Accounting Reports (OHADA - RDC)](https://www.banana.ch/apps/fr/node/9093) and it's been developed following the specific [OHADA-RDC Cash Flow Documentation](https://github.com/BananaAccounting/Africa/blob/master/RDC/cashflow/cashflow_documentation.pdf)
 
 The syntax used to specify which data to use is **{account/group, column}**, where:
 * **account/group**: indicates the account or group of the Accounts table in Banana (groups begins with **Gr=**);
