@@ -2,7 +2,7 @@
 
 The **Cash Flow Report** is part of the BananaApp [Accounting Reports (OHADA - RDC)](https://www.banana.ch/apps/fr/node/9093) and it's been developed following the specific [OHADA-RDC Cash Flow Documentation](https://github.com/BananaAccounting/Africa/blob/master/RDC/cashflow/cashflow_documentation.pdf)
 
-The syntax used to specify which data to use is **{account/group, column}**, where:
+The syntax used to specify which data to use is **account/group, column**, where:
 * **account/group**: indicates the account or group of the Accounts table in Banana (groups begins with **Gr=**);
 * **column**: indicates the type of data (Opening, Debit, Credit, Total(debit-credit)) of the Accounts table in Banana;
 * **(-1)**: indicates that the value must be inverted. If positive inverts to a negative value, if negative inverts to a positive value.
