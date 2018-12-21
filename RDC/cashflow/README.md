@@ -1,6 +1,6 @@
 # Cash Flow Report
 
-The BananaApp has been developed following the specific RDC pdf documentations below.
+The **Cash Flow Report** is part of the BananaApp **[Accounting Reports (OHADA - RDC)](https://www.banana.ch/apps/fr/node/9093)** and it's been developed following the specific RDC pdf documentations below.
 
 Content:
 
