@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.cashflowrdc.test
 // @api = 1.0
-// @pubdate = 2018-12-10
+// @pubdate = 2019-01-14
 // @publisher = Banana.ch SA
 // @description = [Test] Cash Flow RDC
 // @task = app.command
@@ -72,12 +72,12 @@ TestCashflowRDC.prototype.testVerifyMethods = function() {
    Test.assertIsEqual(calculate_FI(banDoc, startDate, endDate), "109.00");
    Test.assertIsEqual(calculate_FJ(banDoc, startDate, endDate), "");
    Test.assertIsEqual(calculate_FK(banDoc, startDate, endDate), "-51.00");
-   Test.assertIsEqual(calculate_FL(banDoc, startDate, endDate), "15.00");
+   Test.assertIsEqual(calculate_FL(banDoc, startDate, endDate), "13.00");
    Test.assertIsEqual(calculate_FM(banDoc, startDate, endDate), "10.00");
    Test.assertIsEqual(calculate_FN(banDoc, startDate, endDate), "-5.00");
-   Test.assertIsEqual(calculate_FO(banDoc, startDate, endDate), "68.00");
-   Test.assertIsEqual(calculate_FP(banDoc, startDate, endDate), "7.00");
-   Test.assertIsEqual(calculate_FQ(banDoc, startDate, endDate), "65.00");
+   Test.assertIsEqual(calculate_FO(banDoc, startDate, endDate), "51.00");
+   Test.assertIsEqual(calculate_FP(banDoc, startDate, endDate), "");
+   Test.assertIsEqual(calculate_FQ(banDoc, startDate, endDate), "47.00");
    
    var tot_BF = calculate_tot_BF(
       calculate_FB(banDoc, startDate, endDate),
@@ -107,22 +107,22 @@ TestCashflowRDC.prototype.testVerifyMethods = function() {
       calculate_FL(banDoc, startDate, endDate),
       calculate_FM(banDoc, startDate, endDate),
       calculate_FN(banDoc, startDate, endDate));
-   Test.assertIsEqual(tot_ZD, "-41.00");
+   Test.assertIsEqual(tot_ZD, "-43.00");
 
    var tot_ZE = calculate_tot_ZE(
       calculate_FO(banDoc, startDate, endDate),
       calculate_FP(banDoc, startDate, endDate),
       calculate_FQ(banDoc, startDate, endDate));
-   Test.assertIsEqual(tot_ZE, "10.00");
+   Test.assertIsEqual(tot_ZE, "4.00");
 
    var tot_ZF = calculate_tot_ZF(tot_ZD,tot_ZE);
-   Test.assertIsEqual(tot_ZF, "-31.00");
+   Test.assertIsEqual(tot_ZF, "-39.00");
 
    var tot_ZG = calculate_tot_ZG(tot_ZB,tot_ZC,tot_ZF);
-   Test.assertIsEqual(tot_ZG, "93.00");
+   Test.assertIsEqual(tot_ZG, "85.00");
 
    var tot_ZH = calculate_tot_ZH(tot_ZG,calculate_ZA(banDoc, startDate, endDate));
-   Test.assertIsEqual(tot_ZH, "233.00");
+   Test.assertIsEqual(tot_ZH, "225.00");
 
 }
 

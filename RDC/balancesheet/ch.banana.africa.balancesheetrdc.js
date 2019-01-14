@@ -870,6 +870,16 @@ function createBalanceSheetReport(current,report) {
    tableRow.addCell(formatValues(DZ_exerciceN),"right greyCell bold",1);
    tableRow.addCell(formatValues(DZ_exerciceN1),"right greyCell bold",1);
 
+   /* Check active and passive net balance at 31.12 */
+   if (BZ_exerciceN !== DZ_exerciceN) {
+      Banana.document.addMessage("Bilan: Le solde net du l'actif au 31.12." + currentYear + " (BZ) diffère du solde net du passif au 31.12." + currentYear + " (DZ).");
+   }
+
+   /* Check active and passive opening net balance */
+   if (BZ_exerciceN1 !== DZ_exerciceN1) {
+      Banana.document.addMessage("Bilan: Le solde net de l'actif au 31.12." + previousYear + " (BZ) diffère du solde net du passif au 31.12." + previousYear + " (DZ).");
+   }
+
    return report;
 }
 
