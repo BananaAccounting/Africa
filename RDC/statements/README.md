@@ -6,9 +6,9 @@ The BananaApp [Accounting Reports (OHADA - RDC)](https://www.banana.ch/apps/fr/n
 * Cash Flow
 
 The app has been developed following the specific OHADA-RDC documentations:
-* [Balance Sheet documentation](https://github.com/BananaAccounting/Africa/blob/master/RDC/balancesheet/balancesheet_documentation.pdf)
-* [Profit/Loss Statement documentation](https://github.com/BananaAccounting/Africa/blob/master/RDC/profitlossstatement/profitlosstatement_documentation.pdf)
-* [Cash Flow documentation](https://github.com/BananaAccounting/Africa/blob/master/RDC/cashflow/cashflow_documentation.pdf)
+* [Balance Sheet documentation](https://github.com/BananaAccounting/Africa/blob/master/RDC/statements/balancesheet/balancesheet_documentation.pdf)
+* [Profit/Loss Statement documentation](https://github.com/BananaAccounting/Africa/blob/master/RDC/statements/profitlossstatement/profitlosstatement_documentation.pdf)
+* [Cash Flow documentation](https://github.com/BananaAccounting/Africa/blob/master/RDC/statements/cashflow/cashflow_documentation.pdf)
 
 In the documentations, the syntax used to specify which data to use is **{account/group,column}**, where:
 * **account/group**: indicates the account or group of the Accounts table in Banana (groups begins with **Gr=**);
@@ -16,9 +16,9 @@ In the documentations, the syntax used to specify which data to use is **{accoun
 * **(-1)**: indicates that the value must be inverted. If positive inverts to a negative value, if negative inverts to a positive value.
 
 JavaScript files:
-* [Balance Sheet JavaScript file](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/balancesheet/ch.banana.africa.balancesheetrdc.js)
-* [Profit/Loss Statement JavaScript file](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/profitlossstatement/ch.banana.africa.profitlossstatementrdc.js)
-* [Cash Flow JavaScript file](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/cashflow/ch.banana.africa.cashflowrdc.js)
+* [Balance Sheet JavaScript file](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/statements/balancesheet/ch.banana.africa.balancesheetrdc.js)
+* [Profit/Loss Statement JavaScript file](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/statements/profitlossstatement/ch.banana.africa.profitlossstatementrdc.js)
+* [Cash Flow JavaScript file](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/statements/cashflow/ch.banana.africa.cashflowrdc.js)
 
 
 ## Banana Accounting file settings
@@ -46,18 +46,18 @@ It is optional: if the previous year file is selected it is used to calculate an
 * Install the BananaApp **Accounting Reports (OHADA - RDC)**. Visit the [Menu Apps](https://www.banana.ch/doc9/en/node/4727) documentation.
 
 ### Run the BananaApp:
-* Open your accounting file with Banana (or download the [accounting_2018.ac2](https://github.com/BananaAccounting/Africa/raw/master/RDC/cashflow/accounting_2018.ac2) file example).
+* Open your accounting file with Banana (or download the [accounting_2018.ac2](https://github.com/BananaAccounting/Africa/raw/master/RDC/statements/cashflow/accounting_2018.ac2) file example).
 * In Banana select from the **menu Apps** the BananaApp **Accounting Reports (OHADA - RDC)** then **Balance Sheet, Profit/Loss Statement, Cash Flow**.
 * Check the results.
 
 Active Balance Sheet Report example:
-![Active Balance Sheet Report Example](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/balancesheet/images/balancesheet_active_report.png)
+![Active Balance Sheet Report Example](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/statements/balancesheet/images/balancesheet_active_report.png)
 
 Passive Balance Sheet Report example:
-![Passive Balance Sheet Report Example](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/balancesheet/images/balancesheet_passive_report.png)
+![Passive Balance Sheet Report Example](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/statements/balancesheet/images/balancesheet_passive_report.png)
 
 Profit/Loss Statement Report example:
-![Profit/Loss Statement Report Example](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/profitlossstatement/images/profitlossstatement_report.png)
+![Profit/Loss Statement Report Example](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/statements/profitlossstatement/images/profitlossstatement_report.png)
 
 Cash Flow Report example:
-![Cash Flow Report Example](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/cashflow/images/banana_report.png)
+![Cash Flow Report Example](https://raw.githubusercontent.com/BananaAccounting/Africa/master/RDC/statements/cashflow/images/banana_report.png)
