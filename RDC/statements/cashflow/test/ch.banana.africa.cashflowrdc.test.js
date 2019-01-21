@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.cashflowrdc.test
 // @api = 1.0
-// @pubdate = 2019-01-14
+// @pubdate = 2019-01-21
 // @publisher = Banana.ch SA
 // @description = [Test] Cash Flow RDC
 // @task = app.command
@@ -100,7 +100,7 @@ TestCashflowRDC.prototype.testVerifyMethods = function() {
       calculate_FH(banDoc, startDate, endDate),
       calculate_FI(banDoc, startDate, endDate),
       calculate_FJ(banDoc, startDate, endDate));
-   Test.assertIsEqual(tot_ZC, "119.00");
+   Test.assertIsEqual(tot_ZC, "91.00");
 
    var tot_ZD = calculate_tot_ZD(
       calculate_FK(banDoc, startDate, endDate),
@@ -119,10 +119,10 @@ TestCashflowRDC.prototype.testVerifyMethods = function() {
    Test.assertIsEqual(tot_ZF, "-39.00");
 
    var tot_ZG = calculate_tot_ZG(tot_ZB,tot_ZC,tot_ZF);
-   Test.assertIsEqual(tot_ZG, "85.00");
+   Test.assertIsEqual(tot_ZG, "57.00");
 
    var tot_ZH = calculate_tot_ZH(tot_ZG,calculate_ZA(banDoc, startDate, endDate));
-   Test.assertIsEqual(tot_ZH, "225.00");
+   Test.assertIsEqual(tot_ZH, "197.00");
 
 }
 

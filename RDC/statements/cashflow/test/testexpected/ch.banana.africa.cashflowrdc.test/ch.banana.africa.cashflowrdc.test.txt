@@ -18,7 +18,7 @@
 \newenvironment{testcase}[1]{\section*{Test: #1}}{\newpage}
 \newenvironment{test}[1]{\section*{Test case: #1}}{}
 %Begin test data
-%%SCRIPT{/Users/ivan/Documents/GitHub/Africa/RDC/cashflow/test/ch.banana.africa.cashflowrdc.test.js}
+%%SCRIPT{/Users/ivan/Documents/GitHub/Africa/RDC/statements/cashflow/test/ch.banana.africa.cashflowrdc.test.js}
 %
 \begin{testcase}{TestCashflowRDC}
 \begin{test}{testVerifyMethods}
@@ -54,7 +54,7 @@ FG  & (-) Décaissements liés aux acquisitions d'immobilisations corporelles  &
 FH  & (-) Décaissements liés aux acquisitions d'immobilisations financières  &  & -5.00  & -5.00 \\
 FI  & (+) Encaissements liés aux cessions d'immobilisations incorporelles et corporelles  &  & 109.00  & 109.00 \\
 FJ  & (+) Encaissements liés aux cessions d'immobilisations financières  &  & 0.00  & 0.00 \\
-ZC  & Flux de trésorerie provenant des activités d'investissement (somme FF à FJ)  & C  & 119.00  & 119.00 \\
+ZC  & Flux de trésorerie provenant des activités d'investissement (somme FF à FJ)  & C  & 91.00  & 91.00 \\
  & Flux de trésorerie provenant du financement par les capitaux propres  &  &  & \\
 FK  & (+) Augmentations de capital par apports nouveaux  &  & -51.00  & -51.00 \\
 FL  & (+) Subventions d'investissement reçues  &  & 13.00  & 13.00 \\
@@ -67,8 +67,8 @@ FP  & (+) Autres dettes financières  &  & 0.00  & 0.00 \\
 FQ  & (-) Remboursements des emprunts et autres dettes financières  &  & 47.00  & 47.00 \\
 ZE  & Flux de trésorerie provenant des capitaux étrangers (somme FO à FQ)  & E  & 4.00  & 4.00 \\
 ZF  & Flux de trésorerie provenant des activités de financement (D+E)  & F  & -39.00  & -39.00 \\
-ZG  & VARIATION DE LA TRESORERIE NETTE DE LA PERIODE (B+C+F)  & G  & 85.00  & 85.00 \\
-ZH  & Trésorerie nette au 31 Décembre (G+A) Contrôle : Trésorerie actif 2018 - trésorerie passif 2018 =  & H  & 225.00  & 225.00 \\
+ZG  & VARIATION DE LA TRESORERIE NETTE DE LA PERIODE (B+C+F)  & G  & 57.00  & 57.00 \\
+ZH  & Trésorerie nette au 31 Décembre (G+A) Contrôle : Trésorerie actif 2018 - trésorerie passif 2018 =  & H  & 197.00  & 197.00 \\
 \end{longtable}
 \end{reportvalue}
 \keyvalue{Result}{Passed}

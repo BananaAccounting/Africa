@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.cashflowrdc
 // @api = 1.0
-// @pubdate = 2019-01-14
+// @pubdate = 2019-01-21
 // @publisher = Banana.ch SA
 // @description = Cash Flow Report (OHADA - RDC) [BETA]
 // @description.fr = Tableau des flux de tresorerie (OHADA - RDC) [BETA]
@@ -1009,11 +1009,10 @@ function calculate_FO(banDoc, startDate, endDate) {
    return res;
 }
 
-
 function calculate_FP(banDoc, startDate, endDate) {
+
    return "";
 }
-
 
 function calculate_FQ(banDoc, startDate, endDate) {
    /*
@@ -1093,12 +1092,12 @@ function calculate_tot_ZB(FA,FB,FC,FD,FE) {
 
 function calculate_tot_ZC(FF,FG,FH,FI,FJ) {
    /*
-      FF - FG + FH + FI + FJ
+      - FF - FG - FH + FI + FJ
    */
    var res = 0;
-   res = Banana.SDecimal.add(res,FF);
+   res = Banana.SDecimal.subtract(res,FF);
    res = Banana.SDecimal.subtract(res,FG);
-   res = Banana.SDecimal.add(res,FH);
+   res = Banana.SDecimal.subtract(res,FH);
    res = Banana.SDecimal.add(res,FI);
    res = Banana.SDecimal.add(res,FJ);
    return res;
@@ -1106,7 +1105,7 @@ function calculate_tot_ZC(FF,FG,FH,FI,FJ) {
 
 function calculate_tot_ZD(FK,FL,FM,FN) {
    /*
-      FK + FL - FM - FN
+      + FK + FL - FM - FN
    */
    var res = 0;
    res = Banana.SDecimal.add(res,FK);
@@ -1118,7 +1117,7 @@ function calculate_tot_ZD(FK,FL,FM,FN) {
 
 function calculate_tot_ZE(FO,FP,FQ) {
    /*
-      FO + FP - FQ
+      + FO + FP - FQ
    */
    var res = 0;
    res = Banana.SDecimal.add(res,FO);
