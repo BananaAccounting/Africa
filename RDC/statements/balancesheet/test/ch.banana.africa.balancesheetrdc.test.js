@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.balancesheetrdc.test
 // @api = 1.0
-// @pubdate = 2018-12-18
+// @pubdate = 2019-02-04
 // @publisher = Banana.ch SA
 // @description = [Test] Balance sheet  Report (OHADA - RDC) [BETA]
 // @task = app.command
@@ -155,22 +155,20 @@ TestBalanceSheetRDC.prototype.testVerifyMethods = function() {
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=BQ-2|BR-2|BS-2','balance',startDate,endDate), 60.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=BT','balance',startDate,endDate), 60.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=BT','opening',startDate,endDate), 100.00);
-   Test.assertIsEqual(1*getAmount(banDoc,'Gr=BU-1','balance',startDate,endDate), 0.00);
-   Test.assertIsEqual(1*getAmount(banDoc,'Gr=BU-2','balance',startDate,endDate), 0.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=BU','balance',startDate,endDate), 0.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=BU','opening',startDate,endDate), 0.00);
 
    var AZ1_exerciceN = getAmount(banDoc,'Gr=AE-1|AF-1|AG-1|AH-1|AJ-1|AK-1|AL-1|AM-1|AN-1|AR-1|AS-1','balance',startDate,endDate);
    var BK1_exerciceN = getAmount(banDoc,'Gr=BA-1|BB-1|BG-1|BH-1|BI-1|BJ-1','balance',startDate,endDate);
    var BT1_exerciceN = getAmount(banDoc,'Gr=BQ-1|BR-1|BS-1','balance',startDate,endDate);
-   var BU1_exerciceN = getAmount(banDoc,'Gr=BU-1','balance',startDate,endDate);
-   Test.assertIsEqual(1*calculate_BZ(AZ1_exerciceN,BK1_exerciceN,BT1_exerciceN,BU1_exerciceN), -129.00);
+   var BU_exerciceN = getAmount(banDoc,'Gr=BU','balance',startDate,endDate);
+   Test.assertIsEqual(1*calculate_BZ(AZ1_exerciceN,BK1_exerciceN,BT1_exerciceN,BU_exerciceN), -129.00);
 
    var AZ2_exerciceN = getAmount(banDoc,'Gr=AE-2|AF-2|AG-2|AH-2|AJ-2|AK-2|AL-2|AM-2|AN-2|AR-2|AS-2','balance',startDate,endDate);
    var BK2_exerciceN = getAmount(banDoc,'Gr=BA-2|BB-2|BG-2|BH-2|BI-2|BJ-2','balance',startDate,endDate);
    var BT2_exerciceN = getAmount(banDoc,'Gr=BQ-2|BR-2|BS-2','balance',startDate,endDate);
-   var BU2_exerciceN = getAmount(banDoc,'Gr=BU-2','balance',startDate,endDate);
-   Test.assertIsEqual(1*calculate_BZ(AZ2_exerciceN,BK2_exerciceN,BT2_exerciceN,BU2_exerciceN), 86.00);
+   //var BU_exerciceN = getAmount(banDoc,'Gr=BU','balance',startDate,endDate);
+   Test.assertIsEqual(1*calculate_BZ(AZ2_exerciceN,BK2_exerciceN,BT2_exerciceN), 86.00);
 
    var AZ_exerciceN = getAmount(banDoc,'Gr=AZ','balance',startDate,endDate);
    var BK_exerciceN = getAmount(banDoc,'Gr=BK','balance',startDate,endDate);

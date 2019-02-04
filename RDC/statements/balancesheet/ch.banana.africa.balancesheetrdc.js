@@ -14,9 +14,9 @@
 //
 // @id = ch.banana.africa.balancesheetrdc
 // @api = 1.0
-// @pubdate = 2018-12-18
+// @pubdate = 2019-02-04
 // @publisher = Banana.ch SA
-// @description = Balance sheet  Report (OHADA - RDC) [BETA]
+// @description = Balance sheet Report (OHADA - RDC) [BETA]
 // @description.fr = Bilan (OHADA - RDC) [BETA]
 // @task = app.command
 // @doctype = *.*
@@ -498,22 +498,20 @@ function createBalanceSheetReport(current,report) {
    tableRow.addCell(formatValues(BT_exerciceN1),"right greyCell bold",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
 
    /* Row 28: BU */
-   var BU1_exerciceN = getAmount(current,'Gr=BU-1','balance',currentStartDate,currentEndDate);
-   var BU2_exerciceN = getAmount(current,'Gr=BU-2','balance',currentStartDate,currentEndDate);
    var BU_exerciceN = getAmount(current,'Gr=BU','balance',currentStartDate,currentEndDate);
    var BU_exerciceN1 = getAmount(current,'Gr=BU','opening',currentStartDate,currentEndDate);
    tableRow = table.addRow();
    tableRow.addCell("BU","",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
    tableRow.addCell("Ecart de conversion-Actif","",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
    tableRow.addCell("12","",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(BU1_exerciceN),"right",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
-   tableRow.addCell(formatValues(BU2_exerciceN),"right",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell(formatValues(BU_exerciceN),"right",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
+   tableRow.addCell("","right",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
    tableRow.addCell(formatValues(BU_exerciceN),"right",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
    tableRow.addCell(formatValues(BU_exerciceN1),"right",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
 
    /* Row 29: BZ */
-   var BZ1_exerciceN = calculate_BZ(AZ1_exerciceN,BK1_exerciceN,BT1_exerciceN,BU1_exerciceN);
-   var BZ2_exerciceN = calculate_BZ(AZ2_exerciceN,BK2_exerciceN,BT2_exerciceN,BU2_exerciceN);
+   var BZ1_exerciceN = calculate_BZ(AZ1_exerciceN,BK1_exerciceN,BT1_exerciceN,BU_exerciceN);
+   var BZ2_exerciceN = calculate_BZ(AZ2_exerciceN,BK2_exerciceN,BT2_exerciceN);
    var BZ_exerciceN = calculate_BZ(AZ_exerciceN,BK_exerciceN,BT_exerciceN,BU_exerciceN);
    var BZ_exerciceN1 = calculate_BZ(AZ_exerciceN1,BK_exerciceN1,BT_exerciceN1,BU_exerciceN1);
    tableRow = table.addRow();
