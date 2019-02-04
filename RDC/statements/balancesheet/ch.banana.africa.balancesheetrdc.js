@@ -278,12 +278,11 @@ function createBalanceSheetReport(current,report) {
    tableRow.addCell(formatValues(AN_exerciceN),"right",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
    tableRow.addCell(formatValues(AN_exerciceN1),"right",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
 
-
    /* Row 12: AP */
-   var AP1_exerciceN = getAmount(current,'Gr=AP-1','balance',currentStartDate,currentEndDate);
-   var AP2_exerciceN = getAmount(current,'Gr=AP-2','balance',currentStartDate,currentEndDate);
-   var AP_exerciceN = getAmount(current,'Gr=AP','balance',currentStartDate,currentEndDate);
-   var AP_exerciceN1 = getAmount(current,'Gr=AP','opening',currentStartDate,currentEndDate);
+   var AP1_exerciceN = getAmount(current,'Gr=AN-1','balance',currentStartDate,currentEndDate);
+   var AP2_exerciceN = getAmount(current,'Gr=AN-2','balance',currentStartDate,currentEndDate);
+   var AP_exerciceN = getAmount(current,'Gr=AN','balance',currentStartDate,currentEndDate);
+   var AP_exerciceN1 = getAmount(current,'Gr=AN','opening',currentStartDate,currentEndDate);
    tableRow = table.addRow();
    tableRow.addCell("AP","",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
    tableRow.addCell("Avances et acomptes versés sur immobilisations","",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
@@ -403,7 +402,7 @@ function createBalanceSheetReport(current,report) {
    var BI1_exerciceN = getAmount(current,'Gr=BI-1','balance',currentStartDate,currentEndDate);
    var BI2_exerciceN = getAmount(current,'Gr=BI-2','balance',currentStartDate,currentEndDate);
    var BI_exerciceN = getAmount(current,'Gr=BI','balance',currentStartDate,currentEndDate);
-   var BI_exerciceN1 = getAmount(current,'Gr=BI','opening',currentStartDate,currentEndDate);
+   var BI_exerciceN1 = getAmount(current,'Gr=BA','opening',currentStartDate,currentEndDate);
    tableRow = table.addRow();
    tableRow.addCell("BI","",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
    tableRow.addCell("Clients ","",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
@@ -700,7 +699,7 @@ function createBalanceSheetReport(current,report) {
 
    /* Row 12: DA */
    var DA_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=DA','balance',currentStartDate,currentEndDate));
-   var DA_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=DA','opening',currentStartDate,currentEndDate));
+   var DA_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=CP','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
    tableRow.addCell("DA","",1);
    tableRow.addCell("Emprunts et dettes financières diverses","",1);
