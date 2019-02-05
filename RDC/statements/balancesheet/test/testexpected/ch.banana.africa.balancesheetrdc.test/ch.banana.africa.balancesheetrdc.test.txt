@@ -51,7 +51,7 @@ AK  & Bâtiments (1) dont Placement en  Net......./.......  &  & -2.00  & 0.00  
 AL  & Aménagements, agencements et installations  &  & -3.00  & 0.00  & -3.00  & 0.00 \\
 AM  & Matériel, mobilier et actifs biologiques  &  & -4.00  & 0.00  & -4.00  & 0.00 \\
 AN  & Matériel de transport  &  & -5.00  & 0.00  & -5.00  & 0.00 \\
-AP  & Avances et acomptes versés sur immobilisations  & 3  & -5.00  & 0.00  & -5.00  & 0.00 \\
+AP  & Avances et acomptes versés sur immobilisations  & 3  & 0.00  & 0.00  & -11.00  & 0.00 \\
 AQ  & IMMOBILISATIONS FINANCIERES  & 4  &  &  &  & \\
 AR  & Titres de participation  &  & -8.00  & 0.00  & -8.00  & 0.00 \\
 AS  & Autres immobilisations financières  &  & -7.00  & 0.00  & 0.00  & 0.00 \\

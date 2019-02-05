@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.balancesheetrdc.test
 // @api = 1.0
-// @pubdate = 2019-02-04
+// @pubdate = 2019-02-05
 // @publisher = Banana.ch SA
 // @description = [Test] Balance sheet  Report (OHADA - RDC) [BETA]
 // @task = app.command
@@ -99,10 +99,10 @@ TestBalanceSheetRDC.prototype.testVerifyMethods = function() {
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=AN-2','balance',startDate,endDate), 0.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=AN','balance',startDate,endDate), -5.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=AN','opening',startDate,endDate), 0.00);
-   // Test.assertIsEqual(1*getAmount(banDoc,'Gr=AP-1','balance',startDate,endDate), 0.00);
-   // Test.assertIsEqual(1*getAmount(banDoc,'Gr=AP-2','balance',startDate,endDate), 0.00);
-   // Test.assertIsEqual(1*getAmount(banDoc,'Gr=AP','balance',startDate,endDate), -11.00);
-   // Test.assertIsEqual(1*getAmount(banDoc,'Gr=AP','opening',startDate,endDate), 0.00);
+   Test.assertIsEqual(1*getAmount(banDoc,'Gr=AP-1','balance',startDate,endDate), 0.00);
+   Test.assertIsEqual(1*getAmount(banDoc,'Gr=AP-2','balance',startDate,endDate), 0.00);
+   Test.assertIsEqual(1*getAmount(banDoc,'Gr=AP','balance',startDate,endDate), -11.00);
+   Test.assertIsEqual(1*getAmount(banDoc,'Gr=AP','opening',startDate,endDate), 0.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=AR-1','balance',startDate,endDate), -8.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=AR-2','balance',startDate,endDate), 0.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=AR','balance',startDate,endDate), -8.00);
@@ -111,8 +111,8 @@ TestBalanceSheetRDC.prototype.testVerifyMethods = function() {
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=AS-2','balance',startDate,endDate), 0.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=AS','balance',startDate,endDate), 0.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=AS','opening',startDate,endDate), 0.00);
-   Test.assertIsEqual(1*getAmount(banDoc,'Gr=AE-1|AF-1|AG-1|AH-1|AJ-1|AK-1|AL-1|AM-1|AN-1|AR-1|AS-1','balance',startDate,endDate), -43.00);
-   Test.assertIsEqual(1*getAmount(banDoc,'Gr=AE-2|AF-2|AG-2|AH-2|AJ-2|AK-2|AL-2|AM-2|AN-2|AR-2|AS-2','balance',startDate,endDate), 0.00);
+   Test.assertIsEqual(1*getAmount(banDoc,'Gr=AE-1|AF-1|AG-1|AH-1|AJ-1|AK-1|AL-1|AM-1|AN-1|AP-1|AR-1|AS-1','balance',startDate,endDate), -43.00);
+   Test.assertIsEqual(1*getAmount(banDoc,'Gr=AE-2|AF-2|AG-2|AH-2|AJ-2|AK-2|AL-2|AM-2|AN-2|AP-2|AR-2|AS-2','balance',startDate,endDate), 0.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=AZ','balance',startDate,endDate), -54.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=AZ','opening',startDate,endDate), 0.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=BA-1','balance',startDate,endDate), 20.00);
@@ -135,8 +135,8 @@ TestBalanceSheetRDC.prototype.testVerifyMethods = function() {
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=BJ-2','balance',startDate,endDate), 18.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=BJ','balance',startDate,endDate), -26.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=BJ','opening',startDate,endDate), 0.00);
-   Test.assertIsEqual(1*getAmount(banDoc,'Gr=BA-1|BB-1|BG-1|BH-1|BI-1|BJ-1','balance',startDate,endDate), -86.00);
-   Test.assertIsEqual(1*getAmount(banDoc,'Gr=BA-2|BB-2|BG-2|BH-2|BI-2|BJ-2','balance',startDate,endDate), 26.00);
+   Test.assertIsEqual(1*getAmount(banDoc,'Gr=BA-1|BB-1|BH-1|BI-1|BJ-1','balance',startDate,endDate), -86.00);
+   Test.assertIsEqual(1*getAmount(banDoc,'Gr=BA-2|BB-2|BH-2|BI-2|BJ-2','balance',startDate,endDate), 26.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=BK','balance',startDate,endDate), -60.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=BK','opening',startDate,endDate), 0.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=BQ-1','balance',startDate,endDate), 0.00);
@@ -158,13 +158,13 @@ TestBalanceSheetRDC.prototype.testVerifyMethods = function() {
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=BU','balance',startDate,endDate), 0.00);
    Test.assertIsEqual(1*getAmount(banDoc,'Gr=BU','opening',startDate,endDate), 0.00);
 
-   var AZ1_exerciceN = getAmount(banDoc,'Gr=AE-1|AF-1|AG-1|AH-1|AJ-1|AK-1|AL-1|AM-1|AN-1|AR-1|AS-1','balance',startDate,endDate);
+   var AZ1_exerciceN = getAmount(banDoc,'Gr=AE-1|AF-1|AG-1|AH-1|AJ-1|AK-1|AL-1|AM-1|AN-1|AP-1|AR-1|AS-1','balance',startDate,endDate);
    var BK1_exerciceN = getAmount(banDoc,'Gr=BA-1|BB-1|BG-1|BH-1|BI-1|BJ-1','balance',startDate,endDate);
    var BT1_exerciceN = getAmount(banDoc,'Gr=BQ-1|BR-1|BS-1','balance',startDate,endDate);
    var BU_exerciceN = getAmount(banDoc,'Gr=BU','balance',startDate,endDate);
    Test.assertIsEqual(1*calculate_BZ(AZ1_exerciceN,BK1_exerciceN,BT1_exerciceN,BU_exerciceN), -129.00);
 
-   var AZ2_exerciceN = getAmount(banDoc,'Gr=AE-2|AF-2|AG-2|AH-2|AJ-2|AK-2|AL-2|AM-2|AN-2|AR-2|AS-2','balance',startDate,endDate);
+   var AZ2_exerciceN = getAmount(banDoc,'Gr=AE-2|AF-2|AG-2|AH-2|AJ-2|AK-2|AL-2|AM-2|AN-2|AP-2|AR-2|AS-2','balance',startDate,endDate);
    var BK2_exerciceN = getAmount(banDoc,'Gr=BA-2|BB-2|BG-2|BH-2|BI-2|BJ-2','balance',startDate,endDate);
    var BT2_exerciceN = getAmount(banDoc,'Gr=BQ-2|BR-2|BS-2','balance',startDate,endDate);
    //var BU_exerciceN = getAmount(banDoc,'Gr=BU','balance',startDate,endDate);

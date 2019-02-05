@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.balancesheetrdc
 // @api = 1.0
-// @pubdate = 2019-02-04
+// @pubdate = 2019-02-05
 // @publisher = Banana.ch SA
 // @description = Balance sheet Report (OHADA - RDC) [BETA]
 // @description.fr = Bilan (OHADA - RDC) [BETA]
@@ -279,10 +279,10 @@ function createBalanceSheetReport(current,report) {
    tableRow.addCell(formatValues(AN_exerciceN1),"right",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
 
    /* Row 12: AP */
-   var AP1_exerciceN = getAmount(current,'Gr=AN-1','balance',currentStartDate,currentEndDate);
-   var AP2_exerciceN = getAmount(current,'Gr=AN-2','balance',currentStartDate,currentEndDate);
-   var AP_exerciceN = getAmount(current,'Gr=AN','balance',currentStartDate,currentEndDate);
-   var AP_exerciceN1 = getAmount(current,'Gr=AN','opening',currentStartDate,currentEndDate);
+   var AP1_exerciceN = getAmount(current,'Gr=AP-1','balance',currentStartDate,currentEndDate);
+   var AP2_exerciceN = getAmount(current,'Gr=AP-2','balance',currentStartDate,currentEndDate);
+   var AP_exerciceN = getAmount(current,'Gr=AP','balance',currentStartDate,currentEndDate);
+   var AP_exerciceN1 = getAmount(current,'Gr=AP','opening',currentStartDate,currentEndDate);
    tableRow = table.addRow();
    tableRow.addCell("AP","",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
    tableRow.addCell("Avances et acomptes versés sur immobilisations","",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
@@ -331,8 +331,8 @@ function createBalanceSheetReport(current,report) {
    tableRow.addCell(formatValues(AS_exerciceN1),"right",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
 
    /* Row 16: AZ */
-   var AZ1_exerciceN = getAmount(current,'Gr=AE-1|AF-1|AG-1|AH-1|AJ-1|AK-1|AL-1|AM-1|AN-1|AR-1|AS-1','balance',currentStartDate,currentEndDate);
-   var AZ2_exerciceN = getAmount(current,'Gr=AE-2|AF-2|AG-2|AH-2|AJ-2|AK-2|AL-2|AM-2|AN-2|AR-2|AS-2','balance',currentStartDate,currentEndDate);
+   var AZ1_exerciceN = getAmount(current,'Gr=AE-1|AF-1|AG-1|AH-1|AJ-1|AK-1|AL-1|AM-1|AN-1|AP-1|AR-1|AS-1','balance',currentStartDate,currentEndDate);
+   var AZ2_exerciceN = getAmount(current,'Gr=AE-2|AF-2|AG-2|AH-2|AJ-2|AK-2|AL-2|AM-2|AN-2|AP-2|AR-2|AS-2','balance',currentStartDate,currentEndDate);
    //var AZ1_exerciceN = calculate_AZ(AE1_exerciceN,AF1_exerciceN,AG1_exerciceN,AH1_exerciceN,AJ1_exerciceN,AK1_exerciceN,AL1_exerciceN,AM1_exerciceN,AN1_exerciceN,AP1_exerciceN,AR1_exerciceN,AS1_exerciceN);
    //var AZ2_exerciceN = calculate_AZ(AE2_exerciceN,AF2_exerciceN,AG2_exerciceN,AH2_exerciceN,AJ2_exerciceN,AK2_exerciceN,AL2_exerciceN,AM2_exerciceN,AN2_exerciceN,AP2_exerciceN,AR2_exerciceN,AS2_exerciceN);
    var AZ_exerciceN = getAmount(current,'Gr=AZ','balance',currentStartDate,currentEndDate);
@@ -402,7 +402,7 @@ function createBalanceSheetReport(current,report) {
    var BI1_exerciceN = getAmount(current,'Gr=BI-1','balance',currentStartDate,currentEndDate);
    var BI2_exerciceN = getAmount(current,'Gr=BI-2','balance',currentStartDate,currentEndDate);
    var BI_exerciceN = getAmount(current,'Gr=BI','balance',currentStartDate,currentEndDate);
-   var BI_exerciceN1 = getAmount(current,'Gr=BA','opening',currentStartDate,currentEndDate);
+   var BI_exerciceN1 = getAmount(current,'Gr=BI','opening',currentStartDate,currentEndDate);
    tableRow = table.addRow();
    tableRow.addCell("BI","",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
    tableRow.addCell("Clients ","",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
@@ -427,8 +427,8 @@ function createBalanceSheetReport(current,report) {
    tableRow.addCell(formatValues(BJ_exerciceN1),"right",1).setStyleAttributes("border:thin solid black;padding-bottom:2px;padding-top:5px");
 
    /* Row 23: BK */
-   var BK1_exerciceN = getAmount(current,'Gr=BA-1|BB-1|BG-1|BH-1|BI-1|BJ-1','balance',currentStartDate,currentEndDate);
-   var BK2_exerciceN = getAmount(current,'Gr=BA-2|BB-2|BG-2|BH-2|BI-2|BJ-2','balance',currentStartDate,currentEndDate);
+   var BK1_exerciceN = getAmount(current,'Gr=BA-1|BB-1|BH-1|BI-1|BJ-1','balance',currentStartDate,currentEndDate);
+   var BK2_exerciceN = getAmount(current,'Gr=BA-2|BB-2|BH-2|BI-2|BJ-2','balance',currentStartDate,currentEndDate);
    var BK_exerciceN = getAmount(current,'Gr=BK','balance',currentStartDate,currentEndDate);
    var BK_exerciceN1 = getAmount(current,'Gr=BK','opening',currentStartDate,currentEndDate);
    tableRow = table.addRow();
@@ -699,7 +699,7 @@ function createBalanceSheetReport(current,report) {
 
    /* Row 12: DA */
    var DA_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=DA','balance',currentStartDate,currentEndDate));
-   var DA_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=CP','opening',currentStartDate,currentEndDate));
+   var DA_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=DA','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
    tableRow.addCell("DA","",1);
    tableRow.addCell("Emprunts et dettes financières diverses","",1);
