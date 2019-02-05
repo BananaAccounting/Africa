@@ -678,8 +678,8 @@ function createBalanceSheetReport(current,report) {
    tableRow.addCell(formatValues(CL_exerciceN1),"right",1);
 
    /* Row 10: CM */
-   var CM_exerciceN = getAmount(current,'Gr=CM','balance',currentStartDate,currentEndDate);
-   var CM_exerciceN1 = getAmount(current,'Gr=CM','opening',currentStartDate,currentEndDate);
+   var CM_exerciceN = Banana.SDecimal.invert(getAmount(current,'Gr=CM','balance',currentStartDate,currentEndDate));
+   var CM_exerciceN1 = Banana.SDecimal.invert(getAmount(current,'Gr=CM','opening',currentStartDate,currentEndDate));
    tableRow = table.addRow();
    tableRow.addCell("CM","",1);
    tableRow.addCell("Provisions réglementées","",1);

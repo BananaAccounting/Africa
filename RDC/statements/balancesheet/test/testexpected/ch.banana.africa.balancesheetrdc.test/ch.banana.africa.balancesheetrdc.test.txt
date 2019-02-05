@@ -28,87 +28,87 @@
 \begin{test}{testBananaApps}
 \textvalue{This test will tests the BananaApp balancesheet\_rdc.js}\\
 \begin{reportvalue}{Report Balance Sheet RDC}
-Désignation de l'entité:  COMPANY NAME \\
-Exercice clos  le 31.12.2018 \\
-Numéro d'identification:  123456789 \\
+Désignation de l'entité:  KINANO SARL \\
+Exercice clos  le 31.12.2019 \\
+Numéro d'identification:  234D 45 \\
 Durée (en mois):  12 \\
-RCCM:  112233 XX \\
+RCCM:  098543 \\
   \\
   \\
-BILAN ACTIF AU 31 DECEMBRE 2018 \\
+BILAN ACTIF AU 31 DECEMBRE 2019 \\
   \\
 \begin{longtable}[l]{ l  l  l  l  l  l  l }
-REF  & ACTIF  & Note  & \multicolumn{3}{l}{EXERCICE AU 31/12/2018 } & EXERCICE AU 31/12/2017 \\
- &  &  & BRUT 2018  & AMORT et DEPREC.  & NET  & NET \\
+REF  & ACTIF  & Note  & \multicolumn{3}{l}{EXERCICE AU 31/12/2019 } & EXERCICE AU 31/12/2018 \\
+ &  &  & BRUT 2019  & AMORT et DEPREC.  & NET  & NET \\
 AD  & IMMOBILISATIONS INCORPORELLES  & 3  &  &  &  & \\
-AE  & Frais de développement et de prospection  &  & 8.00  & 0.00  & 8.00  & 0.00 \\
-AF  & Brevets, licences, logiciels, et  droits similaires  &  & -8.00  & 0.00  & -8.00  & 0.00 \\
-AG  & Fonds commercial et droit au bail  &  & -7.00  & 0.00  & -7.00  & 0.00 \\
-AH  & Autres immobilisations incorporelles  &  & -6.00  & 0.00  & -6.00  & 0.00 \\
+AE  & Frais de développement et de prospection  &  & 2.00  & 3.00  & 5.00  & 2.00 \\
+AF  & Brevets, licences, logiciels, et  droits similaires  &  & 5.00  & 6.00  & 11.00  & 4.00 \\
+AG  & Fonds commercial et droit au bail  &  & 8.00  & 9.00  & 17.00  & 6.00 \\
+AH  & Autres immobilisations incorporelles  &  & 11.00  & 12.00  & 23.00  & 8.00 \\
 AI  & IMMOBILISATIONS CORPORELLES  & 3  &  &  &  & \\
-AJ  & Terrains (1) dont Placement en  Net......./.......  &  & -1.00  & 0.00  & -1.00  & 0.00 \\
-AK  & Bâtiments (1) dont Placement en  Net......./.......  &  & -2.00  & 0.00  & -2.00  & 0.00 \\
-AL  & Aménagements, agencements et installations  &  & -3.00  & 0.00  & -3.00  & 0.00 \\
-AM  & Matériel, mobilier et actifs biologiques  &  & -4.00  & 0.00  & -4.00  & 0.00 \\
-AN  & Matériel de transport  &  & -5.00  & 0.00  & -5.00  & 0.00 \\
-AP  & Avances et acomptes versés sur immobilisations  & 3  & 0.00  & 0.00  & -11.00  & 0.00 \\
+AJ  & Terrains (1) dont Placement en  Net......./.......  &  & 14.00  & 6.00  & 20.00  & 10.00 \\
+AK  & Bâtiments (1) dont Placement en  Net......./.......  &  & 8.00  & 9.00  & 17.00  & 12.00 \\
+AL  & Aménagements, agencements et installations  &  & 11.00  & 12.00  & 23.00  & 14.00 \\
+AM  & Matériel, mobilier et actifs biologiques  &  & 14.00  & 15.00  & 29.00  & 16.00 \\
+AN  & Matériel de transport  &  & 17.00  & 18.00  & 35.00  & 18.00 \\
+AP  & Avances et acomptes versés sur immobilisations  & 3  & 0.00  & 0.00  & 2.00  & 1.00 \\
 AQ  & IMMOBILISATIONS FINANCIERES  & 4  &  &  &  & \\
-AR  & Titres de participation  &  & -8.00  & 0.00  & -8.00  & 0.00 \\
-AS  & Autres immobilisations financières  &  & -7.00  & 0.00  & 0.00  & 0.00 \\
-AZ  & TOTAL ACTIF IMMOBILISE  &  & -43.00  & 0.00  & -54.00  & 0.00 \\
-BA  & ACTIF CIRCULANT HAO  & 5  & 20.00  & 0.00  & 20.00  & 0.00 \\
-BB  & STOCKS ET ENCOURS  & 6  & 0.00  & 8.00  & 8.00  & 0.00 \\
+AR  & Titres de participation  &  & 4.00  & 0.00  & 7.00  & 2.00 \\
+AS  & Autres immobilisations financières  &  & 7.00  & 8.00  & 8.00  & 3.00 \\
+AZ  & TOTAL ACTIF IMMOBILISE  &  & 101.00  & 98.00  & 204.00  & 99.00 \\
+BA  & ACTIF CIRCULANT HAO  & 5  & 10.00  & 11.00  & 21.00  & 8.00 \\
+BB  & STOCKS ET ENCOURS  & 6  & 13.00  & 14.00  & 27.00  & 10.00 \\
 BG  & CREANCES ET EMPLOIS ASSIMILES   &  &  &  &  & \\
-BH  & Fournisseurs avances versées   & 17  & 0.00  & 0.00  & 0.00  & 0.00 \\
-BI  & Clients   & 7  & -62.00  & 0.00  & -62.00  & 0.00 \\
-BJ  & Autres créances  & 8  & -44.00  & 18.00  & -26.00  & 0.00 \\
-BK  & TOTAL ACTIF CIRCULANT  &  & -86.00  & 26.00  & -60.00  & 0.00 \\
-BQ  & Titres de placement  & 9  & 0.00  & 100.00  & 100.00  & 100.00 \\
-BR  & Valeurs à encaisser  & 10  & 0.00  & 0.00  & 0.00  & 0.00 \\
-BS  & Banques, chèques postaux, caisse et assimilés  & 11  & 0.00  & -40.00  & -40.00  & 0.00 \\
-BT  & TOTAL TRESORERIE-ACTIF  &  & 0.00  & 60.00  & 60.00  & 100.00 \\
-BU  & Ecart de conversion-Actif  & 12  & 0.00  &  & 0.00  & 0.00 \\
-BZ  & TOTAL GENERAL  &  & -129.00  & 86.00  & -54.00  & 100.00 \\
+BH  & Fournisseurs avances versées   & 17  & 7.00  & 8.00  & 15.00  & 12.00 \\
+BI  & Clients   & 7  & 10.00  & 11.00  & 21.00  & 14.00 \\
+BJ  & Autres créances  & 8  & 13.00  & 14.00  & 27.00  & 16.00 \\
+BK  & TOTAL ACTIF CIRCULANT  &  & 53.00  & 58.00  & 111.00  & 60.00 \\
+BQ  & Titres de placement  & 9  & 16.00  & 17.00  & 33.00  & 18.00 \\
+BR  & Valeurs à encaisser  & 10  & 10.00  & 2.00  & 12.00  & 2.00 \\
+BS  & Banques, chèques postaux, caisse et assimilés  & 11  & 189.00  & 5.00  & 194.00  & 95.00 \\
+BT  & TOTAL TRESORERIE-ACTIF  &  & 215.00  & 24.00  & 239.00  & 115.00 \\
+BU  & Ecart de conversion-Actif  & 12  & 7.00  &  & 7.00  & 3.00 \\
+BZ  & TOTAL GENERAL  &  & 376.00  & 180.00  & 561.00  & 277.00 \\
 \end{longtable}
-Désignation de l'entité:  COMPANY NAME \\
-Exercice clos  le 31.12.2018 \\
-Numéro d'identification:  123456789 \\
+Désignation de l'entité:  KINANO SARL \\
+Exercice clos  le 31.12.2019 \\
+Numéro d'identification:  234D 45 \\
 Durée (en mois):  12 \\
-RCCM:  112233 XX \\
+RCCM:  098543 \\
   \\
   \\
-BILAN PASSIF AU 31 DECEMBRE 2018 \\
+BILAN PASSIF AU 31 DECEMBRE 2019 \\
   \\
 \begin{longtable}[l]{ l  l  l  l  l }
-REF  & PASSIF  & Note  & EXERCICE AU 31/12/2018 \newline   \newline NET \newline  & EXERCICE AU 31/12/2017 \newline   \newline NET \newline \\
-CA  & Capital  & 13  & -93.00  & 0.00 \\
-CB  & Apporteurs capital non appelé (-)  & 13  & -9.00  & 0.00 \\
-CD  & Primes liées au capital social  & 14  & 0.00  & 0.00 \\
-CE  & Ecarts de réévaluation  & 3e  & -8.00  & 0.00 \\
-CF  & Réserves indisponibles  & 14  & 0.00  & 0.00 \\
-CG  & Réserves libres  & 14  & 0.00  & 0.00 \\
-CH  & Report à nouveau (+ ou -)  & 14  & 0.00  & 0.00 \\
-CJ  & Résultat net de l'exercice (bénéfice + ou perte -)  &  & 0.00  & 0.00 \\
-CL  & Subventions d'investissement  & 15  & -8.00  & 0.00 \\
-CM  & Provisions réglementées  & 15  & 0.00  & 0.00 \\
-CP  & TOTAL CAPITAUX PROPRES ET RESSOURCES ASSIMILEES  &  & -189.00  & 0.00 \\
-DA  & Emprunts et dettes financières diverses  & 16  & 0.00  & 0.00 \\
-DB  & Dettes de location acquisition  & 16  & 0.00  & 0.00 \\
-DC  & Provisions pour risques et charges  & 16  & 0.00  & 0.00 \\
-DD  & TOTAL DETTES FINANCIERES ET RESSOURCES ASSIMILEES  &  & 36.00  & 0.00 \\
-DF  & TOTAL RESSOURCES STABLES  &  & -153.00  & 0.00 \\
-DH  & Dettes circulantes HAO  & 5  & 21.00  & 0.00 \\
-DI  & Clients, avances reçues  & 7  & 0.00  & 0.00 \\
-DJ  & Fournisseurs d'exploitation  & 17  & -11.00  & 0.00 \\
-DK  & Dettes fiscales et sociales  & 18  & 0.00  & 0.00 \\
-DM  & Autres dettes  & 19  & -1.00  & 0.00 \\
-DN  & Provisions pour risques à court terme  & 19  & -10.00  & 0.00 \\
-DP  & TOTAL PASSIF CIRCULANT  &  & -1.00  & 0.00 \\
+REF  & PASSIF  & Note  & EXERCICE AU 31/12/2019 \newline   \newline NET \newline  & EXERCICE AU 31/12/2018 \newline   \newline NET \newline \\
+CA  & Capital  & 13  & 377.00  & 186.00 \\
+CB  & Apporteurs capital non appelé (-)  & 13  & 3.00  & 1.00 \\
+CD  & Primes liées au capital social  & 14  & 6.00  & 3.00 \\
+CE  & Ecarts de réévaluation  & 3e  & 8.00  & 4.00 \\
+CF  & Réserves indisponibles  & 14  & 8.00  & 5.00 \\
+CG  & Réserves libres  & 14  & 11.00  & 6.00 \\
+CH  & Report à nouveau (+ ou -)  & 14  & 13.00  & 7.00 \\
+CJ  & Résultat net de l'exercice (bénéfice + ou perte -)  &  & 15.00  & 8.00 \\
+CL  & Subventions d'investissement  & 15  & 17.00  & 9.00 \\
+CM  & Provisions réglementées  & 15  & 10.00  & 1.00 \\
+CP  & TOTAL CAPITAUX PROPRES ET RESSOURCES ASSIMILEES  &  & 468.00  & 230.00 \\
+DA  & Emprunts et dettes financières diverses  & 16  & 3.00  & 2.00 \\
+DB  & Dettes de location acquisition  & 16  & 5.00  & 3.00 \\
+DC  & Provisions pour risques et charges  & 16  & 7.00  & 4.00 \\
+DD  & TOTAL DETTES FINANCIERES ET RESSOURCES ASSIMILEES  &  & 15.00  & 9.00 \\
+DF  & TOTAL RESSOURCES STABLES  &  & 483.00  & 239.00 \\
+DH  & Dettes circulantes HAO  & 5  & 9.00  & 5.00 \\
+DI  & Clients, avances reçues  & 7  & 11.00  & 6.00 \\
+DJ  & Fournisseurs d'exploitation  & 17  & 13.00  & 7.00 \\
+DK  & Dettes fiscales et sociales  & 18  & 15.00  & 8.00 \\
+DM  & Autres dettes  & 19  & 17.00  & 9.00 \\
+DN  & Provisions pour risques à court terme  & 19  & 10.00  & 1.00 \\
+DP  & TOTAL PASSIF CIRCULANT  &  & 75.00  & 36.00 \\
 DQ  & Banques, crédits d'escompte  & 20  & 0.00  & 0.00 \\
 DR  & Banques, établissements financiers et crédits de trésorerie  & 20  & 0.00  & 0.00 \\
-DT  & TOTAL TRESORERIE-PASSIF  &  & -20.00  & -40.00 \\
-DV  & Ecart de conversion-Passif  & 12  & -10.00  & 0.00 \\
-DZ  & TOTAL GENERAL  &  & -184.00  & -40.00 \\
+DT  & TOTAL TRESORERIE-PASSIF  &  & 0.00  & 0.00 \\
+DV  & Ecart de conversion-Passif  & 12  & 3.00  & 2.00 \\
+DZ  & TOTAL GENERAL  &  & 561.00  & 277.00 \\
 \end{longtable}
 \end{reportvalue}
 \keyvalue{Result}{Passed}
