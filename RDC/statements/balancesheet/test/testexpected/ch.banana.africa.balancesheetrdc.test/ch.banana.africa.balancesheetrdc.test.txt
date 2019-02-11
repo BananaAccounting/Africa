@@ -28,6 +28,9 @@
 \begin{test}{testBananaApps}
 \textvalue{This test will tests the BananaApp balancesheet\_rdc.js}\\
 \begin{reportvalue}{Report Balance Sheet RDC}
+KINANO SARL \\
+Avenue Tshibangu n°007, C/ LEMBA  - 1234 KINSHASA I  - RD Congo \\
+  \\
 Désignation de l'entité:  KINANO SARL \\
 Exercice clos  le 31.12.2019 \\
 Numéro d'identification:  234D 45 \\
@@ -70,6 +73,9 @@ BT  & TOTAL TRESORERIE-ACTIF  &  & 215.00  & 24.00  & 239.00  & 115.00 \\
 BU  & Ecart de conversion-Actif  & 12  & 7.00  &  & 7.00  & 3.00 \\
 BZ  & TOTAL GENERAL  &  & 376.00  & 180.00  & 561.00  & 277.00 \\
 \end{longtable}
+KINANO SARL \\
+Avenue Tshibangu n°007, C/ LEMBA  - 1234 KINSHASA I  - RD Congo \\
+  \\
 Désignation de l'entité:  KINANO SARL \\
 Exercice clos  le 31.12.2019 \\
 Numéro d'identification:  234D 45 \\

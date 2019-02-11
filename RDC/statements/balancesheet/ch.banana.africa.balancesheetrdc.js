@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.balancesheetrdc
 // @api = 1.0
-// @pubdate = 2019-02-05
+// @pubdate = 2019-02-11
 // @publisher = Banana.ch SA
 // @description = Balance sheet Report (OHADA - RDC) [BETA]
 // @description.fr = Bilan (OHADA - RDC) [BETA]
@@ -63,6 +63,10 @@ function createBalanceSheetReport(current,report) {
    var currentYear = Banana.Converter.toDate(currentStartDate).getFullYear();
    var previousYear = currentYear-1;
    var company = current.info("AccountingDataBase","Company");
+   var address = current.info("AccountingDataBase","Address1");
+   var zip = current.info("AccountingDataBase","Zip");
+   var city = current.info("AccountingDataBase","City");
+   var state = current.info("AccountingDataBase","State");
    var months = monthDiff(Banana.Converter.toDate(currentEndDate), Banana.Converter.toDate(currentStartDate));
    var fiscalNumber = current.info("AccountingDataBase","FiscalNumber");
    var vatNumber = current.info("AccountingDataBase","VatNumber");
@@ -75,6 +79,23 @@ function createBalanceSheetReport(current,report) {
    *  Active Balance sheet
    *******************************************************************************************/
    // Header of the report
+   if (company) {
+      report.addParagraph(company,"bold");
+   }
+   var paragraph = report.addParagraph("","");
+   if (address) {
+      paragraph.addText(address, "");
+   }
+   if (zip && city) {
+      paragraph.addText(" - " + zip + " " + city, "");
+   } else if (!zip && city) {
+      paragraph.addText(" - " + city, "");
+   }
+   if (state) {
+      paragraph.addText(" - " + state, "");
+   }
+   report.addParagraph(" ", "");
+
    var paragraph = report.addParagraph("","");
    paragraph.addText("Désignation de l'entité: ", "bold");
    if (company) {
@@ -531,6 +552,23 @@ function createBalanceSheetReport(current,report) {
    *  Passive Balance sheet
    *******************************************************************************************/
    // Header of the report
+   if (company) {
+      report.addParagraph(company,"bold");
+   }
+   var paragraph = report.addParagraph("","");
+   if (address) {
+      paragraph.addText(address, "");
+   }
+   if (zip && city) {
+      paragraph.addText(" - " + zip + " " + city, "");
+   } else if (!zip && city) {
+      paragraph.addText(" - " + city, "");
+   }
+   if (state) {
+      paragraph.addText(" - " + state, "");
+   }
+   report.addParagraph(" ", "");
+
    paragraph = report.addParagraph("","");
    paragraph.addText("Désignation de l'entité: ", "bold");
    if (company) {
@@ -939,7 +977,7 @@ function formatValues(value) {
 function createStyleSheet() {
    var stylesheet = Banana.Report.newStyleSheet();
 
-   stylesheet.addStyle("@page", "margin:20mm 10mm 10mm 20mm;") 
+   stylesheet.addStyle("@page", "margin:10mm 10mm 10mm 20mm;") 
    stylesheet.addStyle("body", "font-family:Helvetica; font-size:9pt");
    stylesheet.addStyle(".bold", "font-weight:bold;");
    stylesheet.addStyle(".right", "text-align:right;");

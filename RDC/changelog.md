@@ -4,4 +4,6 @@
 
 2019-01-18; Changed repository structure; Added repository "statements" (for the app reports) and "templates" (for accounting files).
 
-2019-01-21; Update Cash Flow app; Corrected the "ZC total" formula.
+2019-01-21; Update Cash Flow app; Changed ZC formula.
+
+2019-02-11; Update scripts; Changed Cash Flow formulas (FD,FJ,FK,FE). Added company and address information on the reports.
