@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.cashflowrdc.test
 // @api = 1.0
-// @pubdate = 2019-02-13
+// @pubdate = 2019-02-15
 // @publisher = Banana.ch SA
 // @description = [Test] Cash Flow RDC
 // @task = app.command
@@ -74,7 +74,7 @@ TestCashflowRDC.prototype.testVerifyMethods = function() {
    Test.assertIsEqual(calculate_FK(banDoc, startDate, endDate), "4.00");
    Test.assertIsEqual(calculate_FL(banDoc, startDate, endDate), "13.00");
    Test.assertIsEqual(calculate_FM(banDoc, startDate, endDate), "10.00");
-   Test.assertIsEqual(calculate_FN(banDoc, startDate, endDate), "-5.00");
+   Test.assertIsEqual(calculate_FN(banDoc, startDate, endDate), "5.00");
    Test.assertIsEqual(calculate_FO(banDoc, startDate, endDate), "51.00");
    Test.assertIsEqual(calculate_FP(banDoc, startDate, endDate), "");
    Test.assertIsEqual(calculate_FQ(banDoc, startDate, endDate), "47.00");
@@ -107,7 +107,7 @@ TestCashflowRDC.prototype.testVerifyMethods = function() {
       calculate_FL(banDoc, startDate, endDate),
       calculate_FM(banDoc, startDate, endDate),
       calculate_FN(banDoc, startDate, endDate));
-   Test.assertIsEqual(tot_ZD, "12.00");
+   Test.assertIsEqual(tot_ZD, "2.00");
 
    var tot_ZE = calculate_tot_ZE(
       calculate_FO(banDoc, startDate, endDate),
@@ -116,13 +116,13 @@ TestCashflowRDC.prototype.testVerifyMethods = function() {
    Test.assertIsEqual(tot_ZE, "4.00");
 
    var tot_ZF = calculate_tot_ZF(tot_ZD,tot_ZE);
-   Test.assertIsEqual(tot_ZF, "16.00");
+   Test.assertIsEqual(tot_ZF, "6.00");
 
    var tot_ZG = calculate_tot_ZG(tot_ZB,tot_ZC,tot_ZF);
-   Test.assertIsEqual(tot_ZG, "116.00");
+   Test.assertIsEqual(tot_ZG, "106.00");
 
    var tot_ZH = calculate_tot_ZH(tot_ZG,calculate_ZA(banDoc, startDate, endDate));
-   Test.assertIsEqual(tot_ZH, "256.00");
+   Test.assertIsEqual(tot_ZH, "246.00");
 
 }
 

@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.prifitlossstatementrdc
 // @api = 1.0
-// @pubdate = 2019-02-11
+// @pubdate = 2019-02-15
 // @publisher = Banana.ch SA
 // @description = Profit/Loss Statement Report (OHADA - RDC) [BETA]
 // @description.fr = Compte de résultat (OHADA - RDC) [BETA]
@@ -62,7 +62,6 @@ function createProfitLossStatementReport(current,report) {
    var previousYear = currentYear-1;
    var company = current.info("AccountingDataBase","Company");
    var address = current.info("AccountingDataBase","Address1");
-   var zip = current.info("AccountingDataBase","Zip");
    var city = current.info("AccountingDataBase","City");
    var state = current.info("AccountingDataBase","State");
    var months = monthDiff(Banana.Converter.toDate(currentEndDate), Banana.Converter.toDate(currentStartDate));
@@ -74,49 +73,18 @@ function createProfitLossStatementReport(current,report) {
    }
 
    // Header of the report
-   if (company) {
-      report.addParagraph(company,"bold");
-   }
-   var paragraph = report.addParagraph("","");
-   if (address) {
-      paragraph.addText(address, "");
-   }
-   if (zip && city) {
-      paragraph.addText(" - " + zip + " " + city, "");
-   } else if (!zip && city) {
-      paragraph.addText(" - " + city, "");
-   }
-   if (state) {
-      paragraph.addText(" - " + state, "");
-   }
+   var table = report.addTable("table");
+   var col1 = table.addColumn("c1");
+   var col2 = table.addColumn("c2");
+   var tableRow;
+   tableRow = table.addRow();
+   tableRow.addCell(company,"bold",1);
+   tableRow.addCell("Exercice clos le " + Banana.Converter.toLocaleDateFormat(currentEndDate), "",1);
+   tableRow = table.addRow();
+   tableRow.addCell(address + " - " + city + " - " + state, "", 1);
+   tableRow.addCell("Durée (en mois) " + months, "", 1);
+
    report.addParagraph(" ", "");
-
-   var paragraph = report.addParagraph("","");
-   paragraph.addText("Désignation de l'entité: ", "bold");
-   if (company) {
-      paragraph.addText(company, "");
-   }
-
-   paragraph = report.addParagraph();
-   paragraph.addText("Exercice clos ", "bold");
-   paragraph.addText("le " + Banana.Converter.toLocaleDateFormat(currentEndDate), "");
-
-   paragraph = report.addParagraph();
-   paragraph.addText("Numéro d'identification: ", "bold");
-   if (fiscalNumber) {
-      paragraph.addText(fiscalNumber,"");
-   }
-
-   paragraph = report.addParagraph();
-   paragraph.addText("Durée (en mois): ", "bold");
-   paragraph.addText(months, "");
-
-   paragraph = report.addParagraph();
-   paragraph.addText("RCCM: ", "bold");
-   if (vatNumber) {
-      paragraph.addText(vatNumber,"");
-   }
-
    report.addParagraph(" ", "");
    report.addParagraph(" ", "");
    report.addParagraph("COMPTE DE RESULTAT AU 31 DECEMBRE " + currentYear,"bold center");
@@ -680,6 +648,12 @@ function createStyleSheet() {
    style.setAttribute("background-color", "#b7c3e0");
 
    /* table */
+   var tableStyle = stylesheet.addStyle(".table");
+   tableStyle.setAttribute("width", "100%");
+   stylesheet.addStyle(".c1", "");
+   stylesheet.addStyle(".c2", "");
+   stylesheet.addStyle("table.table td", "");
+
    var tableStyle = stylesheet.addStyle(".tableProfitLossStatement");
    tableStyle.setAttribute("width", "100%");
    stylesheet.addStyle(".col1", "width:5%");

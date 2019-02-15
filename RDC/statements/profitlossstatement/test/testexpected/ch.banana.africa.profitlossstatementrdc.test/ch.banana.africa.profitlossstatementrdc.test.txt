@@ -28,13 +28,11 @@
 \begin{test}{testBananaApps}
 \textvalue{This test will tests the BananaApp profitlossstatement\_rdc.js}\\
 \begin{reportvalue}{Report Profit \& Loss Statement RDC}
-COMPANY NAME \\
+\begin{longtable}[l]{ l  l }
+COMPANY NAME  & Exercice clos le 31.12.2018 \\
+ -  -   & Durée (en mois) 12 \\
+\end{longtable}
   \\
-Désignation de l'entité:  COMPANY NAME \\
-Exercice clos  le 31.12.2018 \\
-Numéro d'identification:  123456789 \\
-Durée (en mois):  12 \\
-RCCM:  112233 xyz \\
   \\
   \\
 COMPTE DE RESULTAT AU 31 DECEMBRE 2018 \\

@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.cashflowrdc
 // @api = 1.0
-// @pubdate = 2019-02-13
+// @pubdate = 2019-02-15
 // @publisher = Banana.ch SA
 // @description = Cash Flow Report (OHADA - RDC) [BETA]
 // @description.fr = Tableau des flux de tresorerie (OHADA - RDC) [BETA]
@@ -69,7 +69,6 @@ function createCashFlowReport(current, previous, report) {
    var currentYear = Banana.Converter.toDate(currentStartDate).getFullYear();
    var company = current.info("AccountingDataBase","Company");
    var address = current.info("AccountingDataBase","Address1");
-   var zip = current.info("AccountingDataBase","Zip");
    var city = current.info("AccountingDataBase","City");
    var state = current.info("AccountingDataBase","State");
    var months = monthDiff(Banana.Converter.toDate(currentEndDate), Banana.Converter.toDate(currentStartDate));
@@ -88,49 +87,18 @@ function createCashFlowReport(current, previous, report) {
    }
 
    // Header of the report
-   if (company) {
-      report.addParagraph(company,"bold");
-   }
-   var paragraph = report.addParagraph("","");
-   if (address) {
-      paragraph.addText(address, "");
-   }
-   if (zip && city) {
-      paragraph.addText(" - " + zip + " " + city, "");
-   } else if (!zip && city) {
-      paragraph.addText(" - " + city, "");
-   }
-   if (state) {
-      paragraph.addText(" - " + state, "");
-   }
+   var table = report.addTable("table");
+   var col1 = table.addColumn("c1");
+   var col2 = table.addColumn("c2");
+   var tableRow;
+   tableRow = table.addRow();
+   tableRow.addCell(company,"bold",1);
+   tableRow.addCell("Exercice clos le " + Banana.Converter.toLocaleDateFormat(currentEndDate), "",1);
+   tableRow = table.addRow();
+   tableRow.addCell(address + " - " + city + " - " + state, "", 1);
+   tableRow.addCell("Durée (en mois) " + months, "", 1);
+
    report.addParagraph(" ", "");
-
-   var paragraph = report.addParagraph("","");
-   paragraph.addText("Désignation de l'entité: ", "bold");
-   if (company) {
-      paragraph.addText(company, "");
-   }
-
-   paragraph = report.addParagraph();
-   paragraph.addText("Exercice clos ", "bold");
-   paragraph.addText("le " + Banana.Converter.toLocaleDateFormat(currentEndDate), "");
-
-   paragraph = report.addParagraph();
-   paragraph.addText("Numéro d'identification: ", "bold");
-   if (fiscalNumber) {
-      paragraph.addText(fiscalNumber,"");
-   }
-
-   paragraph = report.addParagraph();
-   paragraph.addText("Durée (en mois): ", "bold");
-   paragraph.addText(months, "");
-
-   paragraph = report.addParagraph();
-   paragraph.addText("RCCM: ", "bold");
-   if (vatNumber) {
-      paragraph.addText(vatNumber,"");
-   }
-
    report.addParagraph(" ", "");
    report.addParagraph(" ", "");
    report.addParagraph("TABLEAU DES FLUX DE TRESORERIE","bold center");
@@ -689,6 +657,8 @@ function calculate_FD(banDoc, startDate, endDate) {
       - account 4582, total
       - account 4494, total
       - account 4571, total
+      - account 44511, debit
+      - account 44512, debit
    */   
    var grBG = getAmount(banDoc,'Gr=BG','total',startDate,endDate);
    var acc478 = getAmount(banDoc,'478','debit',startDate,endDate);
@@ -701,6 +671,8 @@ function calculate_FD(banDoc, startDate, endDate) {
    var acc4582 = getAmount(banDoc,'4582','total',startDate,endDate);
    var acc4494 = getAmount(banDoc,'4494','total',startDate,endDate);
    var acc4571 = getAmount(banDoc,'4571','total',startDate,endDate);
+   var acc44511 = getAmount(banDoc,'44511','debit',startDate,endDate);
+   var acc44512 = getAmount(banDoc,'44512','debit',startDate,endDate);
    var res = 0;
    res = Banana.SDecimal.add(res,grBG);
    res = Banana.SDecimal.add(res,acc478);
@@ -713,6 +685,8 @@ function calculate_FD(banDoc, startDate, endDate) {
    res = Banana.SDecimal.subtract(res,acc4582);
    res = Banana.SDecimal.subtract(res,acc4494);
    res = Banana.SDecimal.subtract(res,acc4571);
+   res = Banana.SDecimal.subtract(res,acc44511);
+   res = Banana.SDecimal.subtract(res,acc44512);
    return res;
 }
 
@@ -791,6 +765,7 @@ function calculate_FF(banDoc, startDate, endDate) {
       + Gr=AG-1, debit
       + Gr=AH-1, debit
       + account 251, debit
+      + account 44511, debit
       - (-account 4811, total)
       - (-account 4821, total)
       - (-account 48161, total)
@@ -806,6 +781,7 @@ function calculate_FF(banDoc, startDate, endDate) {
    var grAG1 = getAmount(banDoc,'Gr=AG-1','debit',startDate,endDate);
    var grAH1 = getAmount(banDoc,'Gr=AH-1','debit',startDate,endDate);
    var acc251 = getAmount(banDoc,'251','debit',startDate,endDate);
+   var acc44511 = getAmount(banDoc,'44511','debit',startDate,endDate);
    var acc4811 = getAmount(banDoc,'4811','total',startDate,endDate);
    var acc4821 = getAmount(banDoc,'4821','total',startDate,endDate);
    var acc48161 = getAmount(banDoc,'48161','total',startDate,endDate);
@@ -820,6 +796,7 @@ function calculate_FF(banDoc, startDate, endDate) {
    res = Banana.SDecimal.add(res,grAG1);
    res = Banana.SDecimal.add(res,grAH1);
    res = Banana.SDecimal.add(res,acc251);
+   res = Banana.SDecimal.add(res,acc44511);
    res = Banana.SDecimal.subtract(res, Banana.SDecimal.invert(acc4811));
    res = Banana.SDecimal.subtract(res, Banana.SDecimal.invert(acc4821));
    res = Banana.SDecimal.subtract(res, Banana.SDecimal.invert(acc48161));
@@ -839,6 +816,7 @@ function calculate_FG(banDoc, startDate, endDate) {
       + Gr=AM-1, debit
       + Gr=AN-1, debit
       + account 252, debit
+      + account 44512, debit
       - (-account 4812, total)
       - (-account 4822, total)
       - (-account 48162, total)
@@ -858,6 +836,7 @@ function calculate_FG(banDoc, startDate, endDate) {
    var grAM1 = getAmount(banDoc,'Gr=AM-1','debit',startDate,endDate);
    var grAN1 = getAmount(banDoc,'Gr=AN-1','debit',startDate,endDate);
    var acc252_d = getAmount(banDoc,'252','debit',startDate,endDate);
+   var acc44512 = getAmount(banDoc,'44512','debit',startDate,endDate);
    var acc4812 = getAmount(banDoc,'4812','total',startDate,endDate);
    var acc4822 = getAmount(banDoc,'4822','total',startDate,endDate);
    var acc48162 = getAmount(banDoc,'48162','total',startDate,endDate);
@@ -876,6 +855,7 @@ function calculate_FG(banDoc, startDate, endDate) {
    res = Banana.SDecimal.add(res,grAM1);
    res = Banana.SDecimal.add(res,grAN1);
    res = Banana.SDecimal.add(res,acc252_d);
+   res = Banana.SDecimal.add(res,acc44512);
    res = Banana.SDecimal.subtract(res, Banana.SDecimal.invert(acc4812));
    res = Banana.SDecimal.subtract(res, Banana.SDecimal.invert(acc4822));
    res = Banana.SDecimal.subtract(res, Banana.SDecimal.invert(acc48162));
@@ -1015,10 +995,10 @@ function calculate_FM(banDoc, startDate, endDate) {
 
 function calculate_FN(banDoc, startDate, endDate) {
    /*
-      (-account 465, debit)
+      account 465, debit
    */
    var acc465 = getAmount(banDoc,'465','debit',startDate,endDate);
-   return Banana.SDecimal.invert(acc465);
+   return acc465;
 }
 
 function calculate_FO(banDoc, startDate, endDate) {
@@ -1267,6 +1247,12 @@ function createStyleSheet() {
    style.setAttribute("background-color", "#C0C0C0");
 
    /* table */
+   var tableStyle = stylesheet.addStyle(".table");
+   tableStyle.setAttribute("width", "100%");
+   stylesheet.addStyle(".c1", "");
+   stylesheet.addStyle(".c2", "");
+   stylesheet.addStyle("table.table td", "");
+
    var tableStyle = stylesheet.addStyle(".tableCashFlow");
    tableStyle.setAttribute("width", "100%");
    stylesheet.addStyle(".col1", "width:5%");

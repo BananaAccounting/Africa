@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.reportsohadardc
 // @api = 1.0
-// @pubdate = 2018-12-18
+// @pubdate = 2019-02-15
 // @publisher = Banana.ch SA
 // @description = Balance Sheet, Profit/Loss Statement, Cash Flow
 // @description.fr = Bilan, Compte de résultat, Tableau des flux de tresorerie
@@ -83,6 +83,12 @@ function createStyleSheet() {
    style.setAttribute("background-color", "#b7c3e0");
 
    /* table */
+   var tableStyle = stylesheet.addStyle(".table");
+   tableStyle.setAttribute("width", "100%");
+   stylesheet.addStyle(".c1", "");
+   stylesheet.addStyle(".c2", "");
+   stylesheet.addStyle("table.table td", "");
+   
    var tableStyle = stylesheet.addStyle(".tableActiveBalanceSheet");
    tableStyle.setAttribute("width", "100%");
    stylesheet.addStyle(".col1", "width:4%");

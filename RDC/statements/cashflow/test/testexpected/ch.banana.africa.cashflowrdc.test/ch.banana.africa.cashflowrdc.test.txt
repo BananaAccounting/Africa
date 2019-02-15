@@ -28,14 +28,11 @@
 \begin{test}{testBananaApps}
 \textvalue{This test will tests the BananaApp cashflow\_rdc.js}\\
 \begin{reportvalue}{Report Cash Flow RDC}
-COMPANY NAME \\
-ADDRESS  - ZIP CITY  - STATE \\
+\begin{longtable}[l]{ l  l }
+COMPANY NAME  & Exercice clos le 31.12.2018 \\
+ADDRESS - CITY - STATE  & Durée (en mois) 12 \\
+\end{longtable}
   \\
-Désignation de l'entité:  COMPANY NAME \\
-Exercice clos  le 31.12.2018 \\
-Numéro d'identification:  123456789 \\
-Durée (en mois):  12 \\
-RCCM:  112233 XX \\
   \\
   \\
 TABLEAU DES FLUX DE TRESORERIE \\
@@ -62,16 +59,16 @@ ZC  & Flux de trésorerie provenant des activités d'investissement (somme FF à
 FK  & (+) Augmentations de capital par apports nouveaux  &  & 4.00  & 0.00 \\
 FL  & (+) Subventions d'investissement reçues  &  & 13.00  & 13.00 \\
 FM  & (-) Prélèvements sur le capital  &  & 10.00  & 10.00 \\
-FN  & (-) Dividendes verses  &  & -5.00  & -5.00 \\
-ZD  & Flux de trésorerie provenant des capitaux propres (somme FK à FN)  & D  & 12.00  & 8.00 \\
+FN  & (-) Dividendes verses  &  & 5.00  & 5.00 \\
+ZD  & Flux de trésorerie provenant des capitaux propres (somme FK à FN)  & D  & 2.00  & -2.00 \\
  & Trésorerie provenant du financement par les capitaux étrangers  &  &  & \\
 FO  & (+) Emprunts  &  & 51.00  & 51.00 \\
 FP  & (+) Autres dettes financières  &  & 0.00  & 0.00 \\
 FQ  & (-) Remboursements des emprunts et autres dettes financières  &  & 47.00  & 47.00 \\
 ZE  & Flux de trésorerie provenant des capitaux étrangers (somme FO à FQ)  & E  & 4.00  & 4.00 \\
-ZF  & Flux de trésorerie provenant des activités de financement (D+E)  & F  & 16.00  & 12.00 \\
-ZG  & VARIATION DE LA TRESORERIE NETTE DE LA PERIODE (B+C+F)  & G  & 116.00  & 118.00 \\
-ZH  & Trésorerie nette au 31 Décembre (G+A) Contrôle : Trésorerie actif 2018 - trésorerie passif 2018 =  & H  & 256.00  & 258.00 \\
+ZF  & Flux de trésorerie provenant des activités de financement (D+E)  & F  & 6.00  & 2.00 \\
+ZG  & VARIATION DE LA TRESORERIE NETTE DE LA PERIODE (B+C+F)  & G  & 106.00  & 108.00 \\
+ZH  & Trésorerie nette au 31 Décembre (G+A) Contrôle : Trésorerie actif 2018 - trésorerie passif 2018 =  & H  & 246.00  & 248.00 \\
 \end{longtable}
 \end{reportvalue}
 \keyvalue{Result}{Passed}
