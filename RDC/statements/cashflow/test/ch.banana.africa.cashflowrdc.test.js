@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.cashflowrdc.test
 // @api = 1.0
-// @pubdate = 2019-02-15
+// @pubdate = 2019-04-01
 // @publisher = Banana.ch SA
 // @description = [Test] Cash Flow RDC
 // @task = app.command
@@ -65,7 +65,7 @@ TestCashflowRDC.prototype.testVerifyMethods = function() {
    Test.assertIsEqual(calculate_FB(banDoc, startDate, endDate), "3.00");
    Test.assertIsEqual(calculate_FC(banDoc, startDate, endDate), "8.00");
    Test.assertIsEqual(calculate_FD(banDoc, startDate, endDate), "-74.00");
-   Test.assertIsEqual(calculate_FE(banDoc, startDate, endDate), "-26.00");
+   Test.assertIsEqual(calculate_FE(banDoc, startDate, endDate), "-36.00");
    Test.assertIsEqual(calculate_FF(banDoc, startDate, endDate), "19.00");
    Test.assertIsEqual(calculate_FG(banDoc, startDate, endDate), "4.00");
    Test.assertIsEqual(calculate_FH(banDoc, startDate, endDate), "-5.00");
@@ -84,7 +84,7 @@ TestCashflowRDC.prototype.testVerifyMethods = function() {
       calculate_FC(banDoc, startDate, endDate),
       calculate_FD(banDoc, startDate, endDate),
       calculate_FE(banDoc, startDate, endDate));
-   Test.assertIsEqual(tot_BF, "-89.00");
+   Test.assertIsEqual(tot_BF, "-99.00");
    
    var tot_ZB = calculate_tot_ZB(
       calculate_FA(banDoc, startDate, endDate),
@@ -92,7 +92,7 @@ TestCashflowRDC.prototype.testVerifyMethods = function() {
       calculate_FC(banDoc, startDate, endDate),
       calculate_FD(banDoc, startDate, endDate),
       calculate_FE(banDoc, startDate, endDate));
-   Test.assertIsEqual(tot_ZB, "-1.00");
+   Test.assertIsEqual(tot_ZB, "-11.00");
 
    var tot_ZC = calculate_tot_ZC(
       calculate_FF(banDoc, startDate, endDate),
@@ -119,10 +119,10 @@ TestCashflowRDC.prototype.testVerifyMethods = function() {
    Test.assertIsEqual(tot_ZF, "6.00");
 
    var tot_ZG = calculate_tot_ZG(tot_ZB,tot_ZC,tot_ZF);
-   Test.assertIsEqual(tot_ZG, "106.00");
+   Test.assertIsEqual(tot_ZG, "96.00");
 
    var tot_ZH = calculate_tot_ZH(tot_ZG,calculate_ZA(banDoc, startDate, endDate));
-   Test.assertIsEqual(tot_ZH, "246.00");
+   Test.assertIsEqual(tot_ZH, "236.00");
 
 }
 

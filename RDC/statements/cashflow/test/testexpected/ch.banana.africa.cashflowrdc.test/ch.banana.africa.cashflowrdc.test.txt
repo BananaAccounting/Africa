@@ -45,9 +45,9 @@ FA  & Capacité d'Autofinancement Globale (CAFG)  &  & -38.00  & -38.00 \\
 FB  & (-) Variation actif circulant HAO  &  & 3.00  & 3.00 \\
 FC  & (-) Variation des stocks  &  & 8.00  & 8.00 \\
 FD  & (-) Variation des créances  &  & -74.00  & -80.00 \\
-FE  & (+) Variation du passif circulant  &  & -26.00  & -26.00 \\
- & Variation du BF lié aux activités opérationnelles (FB+FC+FD+FE)  &  & -89.00  & -95.00 \\
-ZB  & Flux de trésorerie provenant des activités opérationnelles (somme FA à FE)  & B  & -1.00  & 5.00 \\
+FE  & (+) Variation du passif circulant  &  & -36.00  & -36.00 \\
+ & Variation du BF lié aux activités opérationnelles (FB+FC+FD+FE)  &  & -99.00  & -105.00 \\
+ZB  & Flux de trésorerie provenant des activités opérationnelles (somme FA à FE)  & B  & -11.00  & -5.00 \\
  & Flux de trésorerie provenant des activités d'investissements   &  &  & \\
 FF  & (-) Décaissements liés aux acquisitions d'immobilisations incorporelles  &  & 19.00  & 19.00 \\
 FG  & (-) Décaissements liés aux acquisitions d'immobilisations corporelles  &  & 4.00  & 4.00 \\
@@ -67,8 +67,8 @@ FP  & (+) Autres dettes financières  &  & 0.00  & 0.00 \\
 FQ  & (-) Remboursements des emprunts et autres dettes financières  &  & 47.00  & 47.00 \\
 ZE  & Flux de trésorerie provenant des capitaux étrangers (somme FO à FQ)  & E  & 4.00  & 4.00 \\
 ZF  & Flux de trésorerie provenant des activités de financement (D+E)  & F  & 6.00  & 2.00 \\
-ZG  & VARIATION DE LA TRESORERIE NETTE DE LA PERIODE (B+C+F)  & G  & 106.00  & 108.00 \\
-ZH  & Trésorerie nette au 31 Décembre (G+A) Contrôle : Trésorerie actif 2018 - trésorerie passif 2018 =  & H  & 246.00  & 248.00 \\
+ZG  & VARIATION DE LA TRESORERIE NETTE DE LA PERIODE (B+C+F)  & G  & 96.00  & 98.00 \\
+ZH  & Trésorerie nette au 31 Décembre (G+A) Contrôle : Trésorerie actif 2018 - trésorerie passif 2018 =  & H  & 236.00  & 238.00 \\
 \end{longtable}
 \end{reportvalue}
 \keyvalue{Result}{Passed}

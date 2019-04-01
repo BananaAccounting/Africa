@@ -14,7 +14,7 @@
 //
 // @id = ch.banana.africa.cashflowrdc
 // @api = 1.0
-// @pubdate = 2019-02-15
+// @pubdate = 2019-04-01
 // @publisher = Banana.ch SA
 // @description = Cash Flow Report (OHADA - RDC) [BETA]
 // @description.fr = Tableau des flux de tresorerie (OHADA - RDC) [BETA]
@@ -647,6 +647,7 @@ function calculate_FC(banDoc, startDate, endDate) {
 function calculate_FD(banDoc, startDate, endDate) {
    /* 
       + Gr=BG,total
+      + Gr=BU,total
       + account 478, debit
       - account 4141, debit
       - account 4142, debit
@@ -661,6 +662,7 @@ function calculate_FD(banDoc, startDate, endDate) {
       - account 44512, debit
    */   
    var grBG = getAmount(banDoc,'Gr=BG','total',startDate,endDate);
+   var grBU = getAmount(banDoc,'Gr=BU','total',startDate,endDate);
    var acc478 = getAmount(banDoc,'478','debit',startDate,endDate);
    var acc4141 = getAmount(banDoc,'4141','debit',startDate,endDate);
    var acc4142 = getAmount(banDoc,'4142','debit',startDate,endDate);
@@ -675,6 +677,7 @@ function calculate_FD(banDoc, startDate, endDate) {
    var acc44512 = getAmount(banDoc,'44512','debit',startDate,endDate);
    var res = 0;
    res = Banana.SDecimal.add(res,grBG);
+   res = Banana.SDecimal.add(res,grBU);
    res = Banana.SDecimal.add(res,acc478);
    res = Banana.SDecimal.subtract(res,acc4141);
    res = Banana.SDecimal.subtract(res,acc4142);
@@ -693,6 +696,7 @@ function calculate_FD(banDoc, startDate, endDate) {
 function calculate_FE(banDoc, startDate, endDate) {
    /*
       + (-Gr=DP, total)
+      + (-Gr=DV, total)
       + account 479, credit
       - account 4041, credit
       - account 4042, credit
@@ -715,6 +719,7 @@ function calculate_FE(banDoc, startDate, endDate) {
    */
 
    var grDP = getAmount(banDoc,'Gr=DP','total',startDate,endDate);
+   var grDV = getAmount(banDoc,'Gr=DV','total',startDate,endDate);
    var acc479 = getAmount(banDoc,'479','credit',startDate,endDate);
    var acc4041 = getAmount(banDoc,'4041','credit',startDate,endDate);
    var acc4042 = getAmount(banDoc,'4042','credit',startDate,endDate);
@@ -736,6 +741,7 @@ function calculate_FE(banDoc, startDate, endDate) {
    var acc1768 = getAmount(banDoc,'1768','credit',startDate,endDate);
    var res = 0;
    res = Banana.SDecimal.add(res, Banana.SDecimal.invert(grDP));
+   res = Banana.SDecimal.add(res, Banana.SDecimal.invert(grDV));
    res = Banana.SDecimal.add(res,acc479);
    res = Banana.SDecimal.subtract(res,acc4041);
    res = Banana.SDecimal.subtract(res,acc4042);
