@@ -1,0 +1,22 @@
+Test Banana Apps
+----------------
+
+Date:        2019-04-01 08:36:05.061
+Duration:    00:00:01.282
+Application: BananaExpm90 9.0.3.190320
+OS:          macOS Mojave (10.14)
+Qt:          5.12.1
+
+Test summary
+------------
+
+Test succesfully completed
+
+> Fatal errors:  0
+> Differences:   0
+> Added:         0
+> Deleted:       0
+> Identical:     56
+> Total results: 56
+> Total files:   1
+
