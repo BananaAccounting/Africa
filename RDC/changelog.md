@@ -11,3 +11,5 @@
 2019-02-15: Update scripts; Changed Cash Flow formulas (FD,FF,FG,FN). Changed header information on the reports.
 
 2019-04-01: Update Cash Flow app; Changed formulas (FD,FE) 
+
+2019-05-21: Update Cash Flow app; Changed formulas (FD,FE,FG,FH,FK,FL,FO) 
