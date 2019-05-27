@@ -13,3 +13,5 @@
 2019-04-01: Update Cash Flow app; Changed formulas (FD,FE) 
 
 2019-05-21: Update Cash Flow app; Changed formulas (FD,FE,FG,FH,FK,FL,FO) 
+
+2019-05-27: Update Cash Flow app; Changed formulas (FH,FJ,FO,FQ) 
