@@ -1,4 +1,4 @@
-# Afican countries 
+# African countries 
 
 Template files for:
 
